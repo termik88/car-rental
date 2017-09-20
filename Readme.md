@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Илья Колосов](https://up.htmlacademy.ru/adaptive/12/user/431953).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Мигаева](https://htmlacademy.ru/profile/hatewait).
 
 ---
 
