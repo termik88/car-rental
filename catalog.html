@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Мишка</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+  </head>
+
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин мягкостей «Мишка»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav_toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item user-list__item--search">
+              <a class="user-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-list__item user-list__item--basket">
+              <a class="user-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+      <section class="catalog">
+        <h1 class="catalog__title">Каталог товаров</h1>
+        <article class="catalog__item item">
+          <a class="item__link" href="catalog-item.html">
+            <img class="item__img" src="http://placehold.it/260x195" width="260" height="195">
+            <h3 class="item__title">Зайчик-попрыгайчик</h3>
+          </a>
+          <p class="item__info">Рост 30 см, вес 200 г</p>
+          <b class="item__price">1200 руб.</b>
+          <a class="item__modal-link" href="#">
+            <span class="visually-hidden">Заказать</span>
+          </a>
+        </article>
+        <article class="catalog__item item">
+          <a class="item__link" href="catalog-item.html">
+            <img class="item__img" src="http://placehold.it/260x195" width="260" height="195">
+            <h3 class="item__title">Корзина для белья</h3>
+          </a>
+          <p class="item__info">Диаметр 15 см, высота 10 см</p>
+          <b class="item__price">690 руб.</b>
+          <a class="item__modal-link" href="#">
+            <span class="visually-hidden">Заказать</span>
+          </a>
+        </article>
+        <article class="catalog__item item">
+          <a class="item__link" href="catalog-item.html">
+            <img class="item__img" src="http://placehold.it/260x195" width="260" height="195">
+            <h3 class="item__title">Больша корзинка для игрушек</h3>
+          </a>
+          <p class="item__info">Диаметр 30 см, высота 30 см г</p>
+          <b class="item__price">1500 руб.</b>
+          <a class="item__modal-link" href="#">
+            <span class="visually-hidden">Заказать</span>
+          </a>
+        </article>
+      </section>
+
+      <article class="production">
+        <h2 class="production__title">Процесс производства</h2>
+        <video></video>
+        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <button class="production__button button">Сделать заказ</button>
+      </article>
+
+    </main>
+
+    <footer class="page-footer">
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+            <svg class="social-list__svg" width="22" height="21"></svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+            <svg class="social-list__svg" width="15" height="28"></svg>
+        </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <span class="visually-hidden">ВК</span>
+            <svg class="social-list__svg" width="23" height="20"></svg>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__developer developer">
+        <span class="developer__studio">Разработано</span>
+        <a class="developer__logo" href="#">
+          <img class="developer__logo-img" src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy">
+        </a>
+      </div>
+    </footer>
+
+    <section class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__p">Выберите размер</p>
+      <div class="modal__size selection">
+        <button class="selection__item selection__item--s">S</button>
+        <button class="selection__item selection__item--m">M</button>
+        <button class="selection__item selection__item--l">L</button>
+      </div>
+      <button class="modal__add">Добавить</button>
+    </section>
+
+  </body>
+</html>
