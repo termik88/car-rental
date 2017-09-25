@@ -14,7 +14,7 @@
         <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин мягкостей «Мишка»">
       </a>
       <nav class="main-nav">
-        <button class="main-nav_toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -40,9 +40,9 @@
 
       <section class="promo">
         <h1 class="promo__title">Милые штуки ручной работы для дома</h1>
-        <ul class="promo__list categories">
-          <li class="categories__item categories__item--interier">Предметы интерьера</li>
-          <li class="categories__item categories__item--toys">Детские игрушки</li>
+        <ul class="promo__list categories-list">
+          <li class="categories-list__item categories-list__item--interier">Предметы интерьера</li>
+          <li class="categories__item categories-list__item--toys">Детские игрушки</li>
         </ul>
       </section>
 
@@ -50,18 +50,18 @@
         <h2 class="hit__name">Вязанные корзинки</h2>
         <h3 class="hit__title">Товары недели</h3>
         <p class="hit__description">Экологические чистая пряжа, рачная работа. Доступны в шести расцетках, и рех размерах</p>
-        <table class="hit__consist">
-          <tr class="hit__consist--col">
-            <td class="hit__consist--row">Цвет:</td>
-            <td class="hit__consist--row">«Тиффани»/серый</td>
+        <table class="hit__consist table-consist">
+          <tr class="table-consist__col">
+            <td class="table-consist__row">Цвет:</td>
+            <td class="table-consist__row">«Тиффани»/серый</td>
           </tr>
-          <tr class="hit__consist--col">
-            <td class="hit__consist--row">Диаметр:</td>
-            <td class="hit__consist--row">25 см</td>
+          <tr class="table-consist__col">
+            <td class="table-consist__row">Диаметр:</td>
+            <td class="table-consist__row">25 см</td>
           </tr>
-          <tr class="hit__consist--col">
-            <td class="hit__consist--row">Высота:</td>
-            <td class="hit__consist--row">25 см</td>
+          <tr class="table-consist__col">
+            <td class="table-consist__row">Высота:</td>
+            <td class="table-consist__row">25 см</td>
           </tr>
         </table>
         <img class="hit__foto" src="http://placehold.it/260x315" width="260" height="315" alt="Вязанные корзинки">
@@ -83,19 +83,19 @@
 
       <article class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
-        <blockquote class="reviews__item">
-          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="reviews__info">
-            <strong class="reviews__author-name">Анастасия Красильникова</strong>
-            <span class="reviews__author-email">@misssssiskras</span>
+        <blockquote class="reviews__item post">
+          <p class="post__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <cite class="post__info">
+            <strong class="post__author-name">Анастасия Красильникова</strong>
+            <span class="post__author-email">@misssssiskras</span>
           </cite>
         </blockquote>
-        <div class="reviews__scrolling">
+        <div class="reviews__scrolling scroling">
           <h3 class="visually-hidden">Ознакомиться с другими отзывами</h3>
-          <button class="reviews__scrolling--back">
+          <button class="scroling__button scroling__button--back">
             <span class="visually-hidden">Назад</span>
           </button>
-          <button class="reviews__scrolling--forward">
+          <button class="scroling__button scroling__button--forward">
             <span class="visually-hidden">Вперед</span>
           </button>
         </div>
@@ -104,14 +104,14 @@
 
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <table class="contacts__info">
-          <tr class="contacts__row">
-            <td class="contacts__coll">e-mail:</td>
-            <td class="contacts__coll">info@mimimishkashop>ru</td>
+        <table class="contacts__info table-info">
+          <tr class="table-info__row">
+            <td class="table-info__coll">e-mail:</td>
+            <td class="table-info__coll">info@mimimishkashop>ru</td>
           </tr>
-          <tr class="contacts__row">
-            <td class="contacts__coll">адрес</td>
-            <td class="contacts__coll">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+          <tr class="table-info__row">
+            <td class="table-info__coll">адрес</td>
+            <td class="table-info__coll">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
           </tr>
         </table>
         <div id="contacts__map">
@@ -124,22 +124,22 @@
 
     <footer class="page-footer">
       <ul class="page-footer__social social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
+        <li class="social-list__item social-button">
+          <a class="social-button__link" href="#">
             <span class="visually-hidden">Инстаграм</span>
-            <svg class="social-list__svg" width="22" height="21"></svg>
+            <svg class="social-button__svg" width="22" height="21"></svg>
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
+        <li class="social-list__item social-button">
+          <a class="social-button__link" href="#">
             <span class="visually-hidden">Фейсбук</span>
-            <svg class="social-list__svg" width="15" height="28"></svg>
+            <svg class="social-button__svg" width="15" height="28"></svg>
         </a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
+        <li class="social-list__item social-button">
+          <a class="social-button__link" href="#">
             <span class="visually-hidden">ВК</span>
-            <svg class="social-list__svg" width="23" height="20"></svg>
+            <svg class="social-button__svg" width="23" height="20"></svg>
           </a>
         </li>
       </ul>
@@ -153,7 +153,7 @@
 
     <section class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__p">Выберите размер</p>
+      <p class="modal__subtitle">Выберите размер</p>
       <div class="modal__size selection">
         <button class="selection__item selection__item--s">S</button>
         <button class="selection__item selection__item--m">M</button>
