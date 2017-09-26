@@ -10,7 +10,7 @@
   <body>
 
     <header class="page-header">
-      <div class="page_header__container container">
+      <div class="page_header__container">
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин мягкостей «Мишка»">
         </a>
@@ -53,83 +53,93 @@
       </section>
 
       <article class="hit">
-        <h2 class="hit__name">Вязанные корзинки</h2>
-        <h3 class="hit__title">Товары недели</h3>
-        <p class="hit__description">Экологические чистая пряжа, рачная работа. Доступны в шести расцетках, и рех размерах</p>
-        <table class="hit__consist table-consist">
-          <tr class="table-consist__col">
-            <td class="table-consist__row">Цвет:</td>
-            <td class="table-consist__row">«Тиффани»/серый</td>
-          </tr>
-          <tr class="table-consist__col">
-            <td class="table-consist__row">Диаметр:</td>
-            <td class="table-consist__row">25 см</td>
-          </tr>
-          <tr class="table-consist__col">
-            <td class="table-consist__row">Высота:</td>
-            <td class="table-consist__row">25 см</td>
-          </tr>
-        </table>
-        <img class="hit__foto" src="http://placehold.it/260x315" width="260" height="315" alt="Вязанные корзинки">
-        <p class="hit__price">Цена: 990 руб.</p>
-        <button class="hit__buttom button">Заказать</button>
+        <div class="hit__container">
+          <h2 class="hit__name">Вязанные корзинки</h2>
+          <span class="hit__title">Товары недели</span>
+          <p class="hit__description">Экологические чистая пряжа, ручная работа. Доступны в шести расцетках, и рех размерах</p>
+          <table class="hit__consist table-consist">
+            <tr class="table-consist__col">
+              <td class="table-consist__row">Цвет:</td>
+              <td class="table-consist__row">«Тиффани»/серый</td>
+            </tr>
+            <tr class="table-consist__col">
+              <td class="table-consist__row">Диаметр:</td>
+              <td class="table-consist__row">25 см</td>
+            </tr>
+            <tr class="table-consist__col">
+              <td class="table-consist__row">Высота:</td>
+              <td class="table-consist__row">25 см</td>
+            </tr>
+          </table>
+          <img class="hit__foto" src="http://placehold.it/260x315" width="260" height="315" alt="Вязанные корзинки">
+          <p class="hit__price">Цена: 990 руб.</p>
+          <button class="hit__buttom button">Заказать</button>
+        </div>
       </article>
 
       <section class="about">
-        <h2 class="about__title">Коротко о нас</h2>
-        <ul class="about__list">
-          <li class="about__item about__item--ecology">Экологически чистые материалы</li>
-          <li class="about__item about__item--cheap">Скандинавский стиль по российской цене</li>
-          <li class="about__item about__item--likes">Увеличивает лайки на фотографиях</li>
-          <li class="about__item about__item--handmade">Связано вручную с любовью и умилением</li>
-          <li class="about__item about__item--local">Поддержка отечественного производителя</li>
-          <li class="about__item about__item--presentable">Поставляется в подарочной упаковке</li>
-        </ul>
+        <div class="about__container">
+          <h2 class="about__title">Коротко о нас</h2>
+          <ul class="about__list">
+            <li class="about__item about__item--ecology">Экологически чистые материалы</li>
+            <li class="about__item about__item--cheap">Скандинавский стиль по российской цене</li>
+            <li class="about__item about__item--likes">Увеличивает лайки на фотографиях</li>
+            <li class="about__item about__item--handmade">Связано вручную с любовью и умилением</li>
+            <li class="about__item about__item--local">Поддержка отечественного производителя</li>
+            <li class="about__item about__item--presentable">Поставляется в подарочной упаковке</li>
+          </ul>
+        </div>
       </section>
 
       <article class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
-        <blockquote class="reviews__item post">
-          <p class="post__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="post__info">
-            <strong class="post__author-name">Анастасия Красильникова</strong>
-            <span class="post__author-email">@misssssiskras</span>
-          </cite>
-        </blockquote>
-        <div class="reviews__scrolling scroling">
-          <h3 class="visually-hidden">Ознакомиться с другими отзывами</h3>
-          <button class="scroling__button scroling__button--back">
-            <span class="visually-hidden">Назад</span>
-          </button>
-          <button class="scroling__button scroling__button--forward">
-            <span class="visually-hidden">Вперед</span>
-          </button>
+        <div class="reviews__container">
+          <h2 class="reviews__title">Отзывы</h2>
+          <blockquote class="reviews__item post">
+            <p class="post__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <cite class="post__info">
+              <strong class="post__author-name">Анастасия Красильникова</strong>
+              <span class="post__author-email">@misssssiskras</span>
+            </cite>
+          </blockquote>
+          <div class="reviews__scrolling scroling">
+            <h3 class="visually-hidden">Ознакомиться с другими отзывами</h3>
+            <button class="scroling__button scroling__button--back">
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <button class="scroling__button scroling__button--forward">
+              <span class="visually-hidden">Вперед</span>
+            </button>
+          </div>
+          <a class="reviews__button button" href="#">Написать</a>
         </div>
-        <a class="reviews__button button" href="#">Написать</a>
       </article>
 
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <div class="contacts__main-info main-info">
-          <div class="main-info__item e-mail">
-            <span class="e-mail__item  e-mail__item--name">e-mail:</span>
-            <a class="e-mail__item  e-mail__item--value" href="#">info@mimimishkashop.ru</a>
+        <div class="contacts__container">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__main-info main-info">
+            <div class="main-info__item e-mail">
+              <span class="e-mail__item  e-mail__item--name">e-mail:</span>
+              <a class="e-mail__item  e-mail__item--value" href="#">info@mimimishkashop.ru</a>
+            </div>
+            <div class="main-info__item address">
+              <span class="address__item  address__item--name">адрес:</span>
+              <p class="address__item  address__item--value">г. Санкт-Петербург,<br> ул. Большая Конюшенная, д. 19/8, офис 101</p>
+            </div>
           </div>
-          <div class="main-info__item address">
-            <span class="address__item  address__item--name">адрес:</span>
-            <p class="address__item  address__item--value">г. Санкт-Петербург,<br> ул. Большая Конюшенная, д. 19/8, офис 101</p>
-          </div>
+          <a class="contacts__button button" href="#">Напишите нам</a>
         </div>
-        <div id="contacts__map">
-          <img class="contacts__map-img" src="http://placehold.it/322x457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-        </div>
-        <a class="contacts__button button" href="#">Напишите нам</a>
       </section>
+
+      <article id="contacts__map">
+        <h2 class="visually-hidden">Карта: Наше местоположение</h2>
+        <img class="contacts__map-img" src="http://placehold.it/322x457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+      </article>
 
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__container container">
+      <div class="page-footer__container">
         <ul class="page-footer__social social-list">
           <li class="social-list__item social-button">
             <a class="social-button__link" href="#">
@@ -153,14 +163,14 @@
         <div class="page-footer__developer developer">
           <span class="developer__studio">Разработано</span>
           <a class="developer__logo" href="#">
-            <img class="developer__logo-img" src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy">
+            <svg class="developer__logo-svg" width="27" height="34"></svg>
           </a>
         </div>
       </div>
     </footer>
 
     <section class="modal">
-      <div class="modal__container container">
+      <div class="modal__container">
         <form class="modal__form order-form" action="https://echo.htmlacademy.ru">
           <h2 class="order-form__title">Добавить в корзину</h2>
           <p class="order-form__subtitle">Выберите размер</p>
