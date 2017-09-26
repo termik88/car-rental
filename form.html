@@ -10,138 +10,164 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин мягкостей «Мишка»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item user-list__item--search">
-              <a class="user-list__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="user-list__item user-list__item--basket">
-              <a class="user-list__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page_header__container container">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин мягкостей «Мишка»">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="">Вязание на заказ</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item user-list__item--search">
+                <a class="user-list__link" href="#">Поиск по сайту</a>
+              </li>
+              <li class="user-list__item user-list__item--basket">
+                <a class="user-list__link" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
-
       <section class="order">
-        <h1 class="order__title">Вязание на заказ</h1>
-        <p class="order__subtitle">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <div class="order__container container">
+          <h1 class="order__title">Вязание на заказ</h1>
+        </div>
         <form class="order__form form-options" action="https://echo.htmlacademy.ru">
-          <fieldset class="form-options__section list-options">
-            <legend class="list-options__title">Тип</legend>
-            <label class="list-options__label-option" for="type-group-0">
-              <input class="list-options__option visually-hidden" type="radio" name="type-group" id="type-group-0" value="0" checked>
-              <span class="list-options__radio-indicator"></span>
-              Аксессуары для интерьера
-            </label>
-            <label class="list-options__label-option" for="type-group-1">
-              <input class="list-options__option visually-hidden" type="radio" name="type-group" id="type-group-1" value="1">
-              <span class="list-options__radio-indicator"></span>
-              Детская игрушка
-            </label>
-          </fieldset>
-          <fieldset class="form-options__section list-options">
-            <legend class="list-options__title">Цвет</legend>
-            <label class="list-options__label-option" for="white">
-              <input class="list-options__option visually-hidden" type="checkbox" name="white" id="white" checked>
-              <span class="list-options__checkbox-indicator"></span>
-              Белый
-            </label>
-            <label class="list-options__label-option" for="gray">
-              <input class="list-options__option visually-hidden" type="checkbox" name="gray" id="gray" checked>
-              <span class="list-options__checkbox-indicator"></span>
-              Белый
-            </label>
-            <label class="list-options__label-option" for="tifany">
-              <input class="list-options__option visually-hidden" type="checkbox" name="tifany" id="tifany">
-              <span class="list-options__checkbox-indicator"></span>
-              Белый
-            </label>
-            <label class="list-options__label-option" for="black">
-              <input class="list-options__option visually-hidden" type="checkbox" name="black" id="black">
-              <span class="list-options__checkbox-indicator"></span>
-              Белый
-            </label>
-            <label class="list-options__label-option" for="pink">
-              <input class="list-options__option visually-hidden" type="checkbox" name="pink" id="pink">
-              <span class="list-options__checkbox-indicator"></span>
-              Белый
-            </label>
-            <label class="list-options__label-option" for="orange">
-              <input class="list-options__option visually-hidden" type="checkbox" name="orange" id="orange">
-              <span class="list-options__checkbox-indicator"></span>
-              Белый
-            </label>
-          </fieldset>
-          <fieldset class="form-options__section list-options">
-            <legend class="list-options__title">ФИО</legend>
-            <label class="list-options__label-option" for="name">Имя</label>
-            <input class="list-options__input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
-            <label class="list-options__label-option" for="surname">Имя</label>
-            <input class="list-options__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
-            <label class="list-options__label-option" for="patronymic">Имя</label>
-            <input class="list-options__input" type="text" name="patronymic" id="patronymic" placeholder="Отчество если желаете">
-          </fieldset>
-          <fieldset class="form-options__section list-options">
-            <legend class="list-options__title  list-options__title--lebel">Телефон</legend>
-            <input class="list-options__input list-options__input--phone" type="text" name="phone" id="phone" placeholder="+7 XXX XX XX*" required>
-          </fieldset>
-          <fieldset class="form-options__section list-options">
-            <legend class="list-options__title  list-options__title--lebel">e-mail</legend>
-            <input class="list-options__input list-options__input--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
-          </fieldset>
-          <fieldset class="form-options__section list-options">
-            <legend class="list-options__title list-options__title--lebel">ДОП</legend>
-            <textarea class="list-options__input" name="additional-information" id="additional-information" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </fieldset>
-          <p>*Поля обязательные для заполнения</p>
-          <input class="form-options__button button" type="submit" value="Отправить заказ">
+
+          <div class="form-options__header-form">
+            <div class="form-options__container">
+              <p class="order__header-subtitle">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+            </div>
+          </div>
+          <div class="form-options__section list-options">
+            <div class="form-options__container">
+              <span class="list-options__title">Тип</span>
+              <label class="list-options__label-option" for="type-group-0">
+                <input class="list-options__option visually-hidden" type="radio" name="type-group" id="type-group-0" value="0" checked>
+                <span class="list-options__radio-indicator"></span>
+                Аксессуары для интерьера
+              </label>
+              <label class="list-options__label-option" for="type-group-1">
+                <input class="list-options__option visually-hidden" type="radio" name="type-group" id="type-group-1" value="1">
+                <span class="list-options__radio-indicator"></span>
+                Детская игрушка
+              </label>
+            </div>
+          </div>
+          <div class="form-options__section list-options">
+            <div class="form-options__container">
+              <span class="list-options__title">Цвет</span>
+              <label class="list-options__label-option" for="white">
+                <input class="list-options__option visually-hidden" type="checkbox" name="white" id="white" checked>
+                <span class="list-options__checkbox-indicator"></span>
+                Белый
+              </label>
+              <label class="list-options__label-option" for="gray">
+                <input class="list-options__option visually-hidden" type="checkbox" name="gray" id="gray" checked>
+                <span class="list-options__checkbox-indicator"></span>
+                Белый
+              </label>
+              <label class="list-options__label-option" for="tifany">
+                <input class="list-options__option visually-hidden" type="checkbox" name="tifany" id="tifany">
+                <span class="list-options__checkbox-indicator"></span>
+                Белый
+              </label>
+              <label class="list-options__label-option" for="black">
+                <input class="list-options__option visually-hidden" type="checkbox" name="black" id="black">
+                <span class="list-options__checkbox-indicator"></span>
+                Белый
+              </label>
+              <label class="list-options__label-option" for="pink">
+                <input class="list-options__option visually-hidden" type="checkbox" name="pink" id="pink">
+                <span class="list-options__checkbox-indicator"></span>
+                Белый
+              </label>
+              <label class="list-options__label-option" for="orange">
+                <input class="list-options__option visually-hidden" type="checkbox" name="orange" id="orange">
+                <span class="list-options__checkbox-indicator"></span>
+                Белый
+              </label>
+            </div>
+          </div>
+          <div class="form-options__section list-options">
+            <div class="form-options__container">
+              <span class="list-options__title">ФИО</span>
+              <label class="list-options__label-option" for="name">Имя</label>
+              <input class="list-options__input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+              <label class="list-options__label-option" for="surname">Фамилия</label>
+              <input class="list-options__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+              <label class="list-options__label-option" for="patronymic">Отчество</label>
+              <input class="list-options__input" type="text" name="patronymic" id="patronymic" placeholder="Отчество если желаете">
+            </div>
+          </div>
+          <div class="form-options__section list-options">
+            <div class="form-options__container">
+              <label class="list-options__title  list-options__title--lebel" for="phone">Телефон</label>
+              <input class="list-options__input list-options__input--phone" type="text" name="phone" id="phone" placeholder="+7 XXX XX XX*" required>
+            </div>
+          </div>
+          <div class="form-options__section list-options">
+            <div class="form-options__container">
+              <label class="list-options__title  list-options__title--lebel" for="email">e-mail</label>
+              <input class="list-options__input list-options__input--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+            </div>
+          </div>
+          <div class="form-options__section list-options">
+            <div class="form-options__container">
+              <label class="list-options__title list-options__title--lebel" for="additional-information">ДОП</label>
+              <textarea class="list-options__input" name="additional-information" id="additional-information" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+          </div>
+          <div class="form-options__footer-form">
+            <div class="form-options__container">
+              <p>*Поля обязательные для заполнения</p>
+              <input class="form-options__button button" type="submit" value="Отправить заказ">
+            </div>
+          </div>
         </form>
       </section>
 
     </main>
 
     <footer class="page-footer">
-      <ul class="page-footer__social social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <span class="visually-hidden">Инстаграм</span>
-            <svg class="social-list__svg" width="22" height="21"></svg>
+      <div class="page-footer__container container">
+        <ul class="page-footer__social social-list">
+          <li class="social-list__item social-button">
+            <a class="social-button__link" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg class="social-button__svg" width="22" height="21"></svg>
+            </a>
+          </li>
+          <li class="social-list__item social-button">
+            <a class="social-button__link" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg class="social-button__svg" width="15" height="28"></svg>
           </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <span class="visually-hidden">Фейсбук</span>
-            <svg class="social-list__svg" width="15" height="28"></svg>
-        </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <span class="visually-hidden">ВК</span>
-            <svg class="social-list__svg" width="23" height="20"></svg>
+          </li>
+          <li class="social-list__item social-button">
+            <a class="social-button__link" href="#">
+              <span class="visually-hidden">ВК</span>
+              <svg class="social-button__svg" width="23" height="20"></svg>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__developer developer">
+          <span class="developer__studio">Разработано</span>
+          <a class="developer__logo" href="#">
+            <img class="developer__logo-img" src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy">
           </a>
-        </li>
-      </ul>
-      <div class="page-footer__developer developer">
-        <span class="developer__studio">Разработано</span>
-        <a class="developer__logo" href="#">
-          <img class="developer__logo-img" src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy">
-        </a>
+        </div>
       </div>
     </footer>
 

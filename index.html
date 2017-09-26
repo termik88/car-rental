@@ -10,30 +10,32 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин мягкостей «Мишка»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item user-list__item--search">
-              <a class="user-list__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="user-list__item user-list__item--basket">
-              <a class="user-list__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page_header__container container">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин мягкостей «Мишка»">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item user-list__item--search">
+                <a class="user-list__link" href="#">Поиск по сайту</a>
+              </li>
+              <li class="user-list__item user-list__item--basket">
+                <a class="user-list__link" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
@@ -41,8 +43,12 @@
       <section class="promo">
         <h1 class="promo__title">Милые штуки ручной работы для дома</h1>
         <ul class="promo__list categories-list">
-          <li class="categories-list__item categories-list__item--interier">Предметы интерьера</li>
-          <li class="categories__item categories-list__item--toys">Детские игрушки</li>
+          <li class="categories-list__item categories-list__item--interier">
+            <a class="categories-list__link" href="#">Предметы интерьера</a>
+          </li>
+          <li class="categories__item categories-list__item--toys">
+            <a class="categories-list__link" href="#">Детские игрушки</a>
+          </li>
         </ul>
       </section>
 
@@ -69,7 +75,7 @@
         <button class="hit__buttom button">Заказать</button>
       </article>
 
-      <article class="about">
+      <section class="about">
         <h2 class="about__title">Коротко о нас</h2>
         <ul class="about__list">
           <li class="about__item about__item--ecology">Экологически чистые материалы</li>
@@ -79,7 +85,7 @@
           <li class="about__item about__item--local">Поддержка отечественного производителя</li>
           <li class="about__item about__item--presentable">Поставляется в подарочной упаковке</li>
         </ul>
-      </article>
+      </section>
 
       <article class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
@@ -104,16 +110,16 @@
 
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <table class="contacts__info table-info">
-          <tr class="table-info__row">
-            <td class="table-info__coll">e-mail:</td>
-            <td class="table-info__coll">info@mimimishkashop.ru</td>
-          </tr>
-          <tr class="table-info__row">
-            <td class="table-info__coll">адрес</td>
-            <td class="table-info__coll">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-          </tr>
-        </table>
+        <div class="contacts__main-info main-info">
+          <div class="main-info__item e-mail">
+            <span class="e-mail__item  e-mail__item--name">e-mail:</span>
+            <a class="e-mail__item  e-mail__item--value" href="#">info@mimimishkashop.ru</a>
+          </div>
+          <div class="main-info__item address">
+            <span class="address__item  address__item--name">адрес:</span>
+            <p class="address__item  address__item--value">г. Санкт-Петербург,<br> ул. Большая Конюшенная, д. 19/8, офис 101</p>
+          </div>
+        </div>
         <div id="contacts__map">
           <img class="contacts__map-img" src="http://placehold.it/322x457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
         </div>
@@ -123,43 +129,58 @@
     </main>
 
     <footer class="page-footer">
-      <ul class="page-footer__social social-list">
-        <li class="social-list__item social-button">
-          <a class="social-button__link" href="#">
-            <span class="visually-hidden">Инстаграм</span>
-            <svg class="social-button__svg" width="22" height="21"></svg>
+      <div class="page-footer__container container">
+        <ul class="page-footer__social social-list">
+          <li class="social-list__item social-button">
+            <a class="social-button__link" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg class="social-button__svg" width="22" height="21"></svg>
+            </a>
+          </li>
+          <li class="social-list__item social-button">
+            <a class="social-button__link" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg class="social-button__svg" width="15" height="28"></svg>
           </a>
-        </li>
-        <li class="social-list__item social-button">
-          <a class="social-button__link" href="#">
-            <span class="visually-hidden">Фейсбук</span>
-            <svg class="social-button__svg" width="15" height="28"></svg>
-        </a>
-        </li>
-        <li class="social-list__item social-button">
-          <a class="social-button__link" href="#">
-            <span class="visually-hidden">ВК</span>
-            <svg class="social-button__svg" width="23" height="20"></svg>
+          </li>
+          <li class="social-list__item social-button">
+            <a class="social-button__link" href="#">
+              <span class="visually-hidden">ВК</span>
+              <svg class="social-button__svg" width="23" height="20"></svg>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__developer developer">
+          <span class="developer__studio">Разработано</span>
+          <a class="developer__logo" href="#">
+            <img class="developer__logo-img" src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy">
           </a>
-        </li>
-      </ul>
-      <div class="page-footer__developer developer">
-        <span class="developer__studio">Разработано</span>
-        <a class="developer__logo" href="#">
-          <img class="developer__logo-img" src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy">
-        </a>
+        </div>
       </div>
     </footer>
 
     <section class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__subtitle">Выберите размер</p>
-      <div class="modal__size selection">
-        <button class="selection__item selection__item--s">S</button>
-        <button class="selection__item selection__item--m">M</button>
-        <button class="selection__item selection__item--l">L</button>
+      <div class="modal__container container">
+        <form class="modal__form order-form" action="https://echo.htmlacademy.ru">
+          <h2 class="order-form__title">Добавить в корзину</h2>
+          <p class="order-form__subtitle">Выберите размер</p>
+          <div class="order-form__size selection">
+            <label class="selection__label-option" for="type-group-0">
+              <input class="selection__option visually-hidden" type="radio" name="type-group" id="type-group-0" value="s" checked>
+              S
+            </label>
+            <label class="selection__label-option" for="type-group-1">
+              <input class="selection__option visually-hidden" type="radio" name="type-group" id="type-group-1" value="m">
+              M
+            </label>
+            <label class="selection__label-option" for="type-group-2">
+              <input class="selection__option visually-hidden" type="radio" name="type-group" id="type-group-2" value="l">
+              L
+            </label>
+          </div>
+          <input class="order-form__button" type="submit" name="order-form-add" value="Добавить">
+        </form>
       </div>
-      <button class="modal__add">Добавить</button>
     </section>
 
   </body>
