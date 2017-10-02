@@ -1,5 +1,11 @@
 /*promo__list categories-list*/
 .categories-list {
+  margin: 0;
+  margin-top: auto;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding: 0;
+
   font-size: 19px;
   font-weight: 700;
   line-height: 24px;
@@ -7,16 +13,21 @@
 }
 
 .categories-list__item {
+  padding: 27px;
+
   &--interier {
     background-color: @bg-light-green;
   }
 
   &--toys {
-    background-color: @bg-drak-green;
+    background-color: @bg-dark-green;
   }
 }
 
 .categories-list__link {
+  display: block;
+  width: 120px;
+
   color: @white;
   text-decoration: none;
 }
