@@ -4,6 +4,7 @@
 }
 
 .hit__container {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   padding: 27px 30px;
@@ -71,4 +72,60 @@
 
   border: 2px solid #444444;
   background: none;
+}
+
+@media (min-width: @tablet-width) {
+  .hit__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 768px;
+    height: 630px;
+    padding: 60px 430px 40px 50px;
+  }
+
+  .hit__name {
+    margin: 0 -200px 20px -2px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .hit__title {
+    position: absolute;
+    top: 69px;
+    right: 73px;
+    width: 80px;
+
+    text-align: center;
+  }
+
+  .hit__description {
+    margin: 0px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .hit__foto {
+    position: absolute;
+    top: 166px;
+    left: 384px;
+    width: 333px;
+    height: 404px;
+  }
+
+  .hit__price {
+    margin: 0 auto;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hit__button {
+    width: 290px;
+  }
+  .hit__container * {
+    outline: 1px solid blue;
+  }
 }
