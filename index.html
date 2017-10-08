@@ -3,7 +3,6 @@
   <head>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!--<link rel="stylesheet" type="text/css" href="css/outliness.css">-->
     <title>Мишка</title>
     <meta charset="utf-8">
     <meta name="keywords" content="">
@@ -140,9 +139,9 @@
             </div>
           </article>
         </div>
-        <article class="contacts__item map">
+        <article class="contacts__item map"> <!--id="map"-->
           <h2 class="visually-hidden">Карта: Наше местоположение</h2>
-          <img class="map__img" src="img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          <img class="map__img" src="img/map-mobile@1x.jpg" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
         </article>
         <div class="contacts__container">
           <a class="contacts__button button" href="#">Напишите нам</a>
@@ -153,6 +152,9 @@
 
     <footer class="page-footer">
       <div class="page-footer__container">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин мягкостей «Мишка»">
+        </a>
         <ul class="page-footer__social social-list">
           <li class="social-list__item social-button">
             <a class="social-button__link" href="#">
@@ -188,7 +190,7 @@
       <div class="modal__container">
         <form class="modal__form order-form" action="https://echo.htmlacademy.ru">
           <h2 class="order-form__title">Добавить в корзину</h2>
-          <p class="order-form__subtitle">Выберите размер</p>
+          <p class="order-form__subtitle">Выберите размер:</p>
           <div class="order-form__size selection">
             <label class="selection__label-option" for="type-group-0">
               <input class="selection__option visually-hidden" type="radio" name="type-group" id="type-group-0" value="s" checked>
@@ -207,6 +209,12 @@
         </form>
       </div>
     </section>
+<!--
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0Bm_nmmWhk21_hMGchc5d2q70EU350QM&callback=initMap">
+    </script>
 
+    <script type="text/javascript" src="js/scripts.js"></script>
+-->
   </body>
 </html>

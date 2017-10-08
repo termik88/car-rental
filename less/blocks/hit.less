@@ -77,15 +77,14 @@
 @media (min-width: @tablet-width) {
   .hit__container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 768px;
-    height: 630px;
-    padding: 60px 430px 40px 50px;
+    padding: 60px 100px 40px 50px;
   }
 
   .hit__name {
-    margin: 0 -200px 20px -2px;
+    width: 500px;
+    margin-bottom: 50px;
 
     font-size: 43px;
     line-height: 50px;
@@ -101,7 +100,8 @@
   }
 
   .hit__description {
-    margin: 0px;
+    width: 290px;
+    margin-bottom: 42px;
 
     font-size: 17px;
     line-height: 30px;
@@ -116,7 +116,8 @@
   }
 
   .hit__price {
-    margin: 0 auto;
+    width: 290px;
+    margin-bottom: 35px;
 
     font-size: 20px;
     line-height: 24px;
@@ -134,14 +135,29 @@
 @media (min-width: @desktop-width) {
   .hit__container {
     width: 1250px;
-    padding: 85px 100px 85px 274px;
-
-    height: 800px; /*Временно*/
+    padding: 140px 100px 75px 274px;
   }
 
   .hit__title {
     top: 150px;
     left: 142px;
+  }
+
+  .hit__name {
+    width: 873px;
+    margin-bottom: 50px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .hit__foto {
+    top: 85px;
+    left: 625px;
+    width: 525px;
+    height: 636px;
+
+    z-index: -1;
   }
 
   .hit__container * {

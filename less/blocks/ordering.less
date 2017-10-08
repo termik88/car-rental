@@ -1,11 +1,29 @@
 /*ordering - block*/
-.ordering__container {
+.ordering * {
+  outline: 1px solid blue;
+}
+
+.ordering__container-title {
+  margin-bottom: 30px;
+  padding: 65px;
+
   background-color: @bg-grey;
 }
 
 .ordering__title {
+  width: 260px;
+  margin: 0 auto;
+
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
   color: #231f20;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .order-form__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }

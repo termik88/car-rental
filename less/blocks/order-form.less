@@ -1,9 +1,18 @@
 /*modal__form order-form*/
+.order-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .order-form__title {
+  margin-top: 0;
+
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
   color: @black;
+  text-align: center;
 }
 
 .order-form__subtitle {
@@ -21,9 +30,27 @@
 }
 
 .order-form__button {
+  width: 260px;
+  padding: 15px 0;
+
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
   color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .order-form__title {
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .order-form__subtitle {
+    font-size: 17px;
+  }
+
+  .order-form__button {
+    width: 350px;
+  }
 }

@@ -1,21 +1,45 @@
-/*map - block*/
+/*map - block*/ /*Весь блок в разработке*/
 .map {
-  width: 100%;
+  display: flex;
+
   background-color: @bg-grey;
 
   outline: 3px solid blue;
 }
+/*
+#map {
+  margin: 0 auto;
+  height: 430px;
+  width: 100%;
 
-.map__img { /*Блок на доработке*/
-  position: relative;
-  left: 40%;
+  background-image: url("../img/map.png");
+}
+*/
+.map__img {
+  margin: 0 auto;
+
   outline: 3px solid red;
 }
 
 @media (min-width: @tablet-width) {
   .map {
-    width: 100%;
-
     background-color: #444444; /*Времений фон*/
+  }
+
+  .map__img {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  /*#map {
+    width: 525px;
+    height: 457px;
+    margin: 0;
+  }*/
+
+  .map__img {
+    width: 525px;
+    height: 457px;
   }
 }

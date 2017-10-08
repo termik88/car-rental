@@ -37,9 +37,19 @@
     line-height: 50px;
   }
 
-
-
   .about__container * {
     outline: 1px solid blue;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__container {
+    width: 1250px;
+    height: 625px; /*Временно*/
+    padding: 80px 0 30px 270px;
+  }
+
+  .about__title {
+    font-size: 53px;
   }
 }
