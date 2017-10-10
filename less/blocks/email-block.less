@@ -1,5 +1,9 @@
 /*contacts-info__item email-block*/
-.email-block__item {
+.email-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
@@ -8,4 +12,20 @@
 
 .email-block__item--value {
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .email-block {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .email-block {
+    font-size: 17px;
+  }
+
+  .email-block__item--value {
+    padding-left: 30px;
+  }
 }

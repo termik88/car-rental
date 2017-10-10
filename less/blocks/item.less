@@ -1,1 +1,41 @@
 /*catalog__item item*/
+.item {
+  padding-bottom: 30px;
+}
+
+.item__wrapper {
+  padding: 0 28px;
+}
+
+.item__link {
+  display: block;
+  margin-bottom: 28px;
+}
+
+@media (min-width: @tablet-width) {
+  .item {
+    display: flex;
+  }
+
+  .item__link {
+    margin: 0;
+  }
+
+  .item__link-img {
+    width: 334px;
+    height: 334px;
+  }
+
+  .item__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .item {
+    display: block;
+    width: 316px;
+  }
+}

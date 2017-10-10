@@ -1,1 +1,25 @@
 /*modal - block*/
+.modal__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 46px 30px;
+
+  outline: 3px solid red;
+}
+
+.modal__container * {
+  outline: 1px solid blue;
+}
+
+@media (min-width: @tablet-width) {
+  .modal__container {
+    width: 565px;
+    min-height: 336px;
+    padding: 46px 108px;
+  }
+}
+/*
+@media (min-width: @tablet-width) {
+  .modal__container {
+  }
+}*/

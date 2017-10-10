@@ -1,7 +1,56 @@
 /*about - block*/
+.about {
+  outline: 2px solid blue;
+}
+
+.about__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 30px 30px;
+
+  outline: 2px solid red;
+}
+
 .about__title {
+  margin: 0;
+
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .about__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 768px;
+
+    padding: 58px 50px;
+  }
+
+  .about__title {
+    width: 100%;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__container * {
+    outline: 1px solid blue;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__container {
+    width: 1150px;
+    height: 625px; /*Временно*/
+    padding: 80px 225px 30px 225px;
+  }
+
+  .about__title {
+    width: auto;
+    font-size: 53px;
+  }
 }

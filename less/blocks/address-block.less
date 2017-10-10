@@ -1,7 +1,32 @@
 /*contacts-info__item address-block*/
 .address-block {
+  display: flex;
+  justify-content: space-between;
+
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
   color: @grey-text;
+}
+
+.address-block__item--value {
+  margin: 0;
+  width: 183px;
+}
+
+@media (min-width: @tablet-width) {
+  .address-block {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .address-block {
+    font-size: 17px;
+  }
+
+  .address-block__item--value {
+    width: auto;
+    padding-left: 30px;
+  }
 }

@@ -1,57 +1,68 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Мишка</title>
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
   </head>
 
   <body>
 
     <header class="page-header">
       <div class="page_header__container">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин мягкостей «Мишка»">
-        </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="">Вязание на заказ</a>
-              </li>
-            </ul>
-            <ul class="main-nav__list user-list">
-              <li class="user-list__item user-list__item--search">
-                <a class="user-list__link" href="#">Поиск по сайту</a>
-              </li>
-              <li class="user-list__item user-list__item--basket">
-                <a class="user-list__link" href="#">Корзина: пока пуста</a>
-              </li>
-            </ul>
-          </div>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--logo">
+              <a class="site-list__logo-link" href="index.html">
+                <img class="site-list__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин мягкостей «Мишка»">
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--catalog">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item site-list__item--form">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item site-list__item--search">
+              <a class="site-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item site-list__item--basket">
+              <a class="site-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+            <li class="site-list__item site-list__item--new">
+              <a class="site-list__link" href="#">Новые поступления</a>
+            </li>
+            <li class="site-list__item site-list__item--sale">
+              <a class="site-list__link" href="#">Распродажа</a>
+            </li>
+            <li class="site-list__item site-list__item--delivery">
+              <span>Бесплатная доставка по России</span>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
 
     <main class="page-main">
+
       <section class="ordering">
-        <div class="ordering__container">
+        <div class="ordering__container-title">
           <h1 class="ordering__title">Вязание на заказ</h1>
         </div>
         <form class="ordering__form form-options" action="https://echo.htmlacademy.ru">
-          <div class="form-options__header-form">
-            <div class="form-options__container">
-              <p class="ordering__header-subtitle">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <div class="form-options__header header-form">
+            <div class="header-form__container">
+              <p class="header-form__subtitle">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
             </div>
           </div>
           <div class="form-options__section list-options">
-            <div class="form-options__container">
+            <div class="list-options__container">
               <h3 class="list-options__title">Тип</h3>
               <label class="list-options__label-option" for="type-group-0">
                 <input class="list-options__option visually-hidden" type="radio" name="type-group" id="type-group-0" value="0" checked>
@@ -64,7 +75,7 @@
             </div>
           </div>
           <div class="form-options__section list-options">
-            <div class="form-options__container">
+            <div class="list-options__container list-options__container--color">
               <h3 class="list-options__title">Цвет</h3>
               <label class="list-options__label-option" for="white">
                 <input class="list-options__option visually-hidden" type="checkbox" name="white" id="white" checked>
@@ -93,7 +104,7 @@
             </div>
           </div>
           <div class="form-options__section list-options">
-            <div class="form-options__container">
+            <div class="list-options__container">
               <h3 class="list-options__title">ФИО</h3>
               <label class="list-options__label-option" for="name">Имя</label>
               <input class="list-options__input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
@@ -104,27 +115,27 @@
             </div>
           </div>
           <div class="form-options__section list-options">
-            <div class="form-options__container">
+            <div class="list-options__container">
               <h3 class="list-options__title">Телефон</h3>
               <input class="list-options__input list-options__input--phone" type="text" name="phone" id="phone" placeholder="+7 XXX XX XX*" required>
             </div>
           </div>
           <div class="form-options__section list-options">
-            <div class="form-options__container">
+            <div class="list-options__container">
               <h3 class="list-options__title">e-mail</h3>
               <input class="list-options__input list-options__input--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
             </div>
           </div>
           <div class="form-options__section list-options">
-            <div class="form-options__container">
+            <div class="list-options__container">
               <h3 class="list-options__title">ДОП</h3>
               <textarea class="list-options__input" name="additional-information" id="additional-information" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </div>
-          <div class="form-options__footer-form">
-            <div class="form-options__container">
-              <p class="form-options__container-text">*Поля обязательные для заполнения</p>
-              <input class="form-options__button button" type="submit" value="Отправить заказ">
+          <div class="form-options__footer footer-form">
+            <div class="footer-form__container">
+              <p class="footer-form__container-text">*Поля обязательные для заполнения</p>
+              <input class="footer-form__button button" type="submit" value="Отправить заказ">
             </div>
           </div>
         </form>

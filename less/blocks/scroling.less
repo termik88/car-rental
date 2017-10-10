@@ -1,0 +1,35 @@
+/*reviews__scrolling scroling*/
+.scroling {
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.scroling__button {
+  width: 130px;
+  height: 52px;
+  margin: 0;
+  margin-top: 28px;
+
+  border: 1px solid #444444;
+  background: none;
+}
+
+@media (min-width: @tablet-width) {
+  .scroling {
+    position: absolute;
+    top: 330px;
+    right: 50px;
+    margin-left: auto;
+  }
+
+  .scroling__button {
+    width: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .scroling {
+    top: 335px;
+    left: 920px;
+  }
+}

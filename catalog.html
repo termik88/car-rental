@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Мишка</title>
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
   </head>
 
   <body>
 
     <header class="page-header">
       <div class="page_header__container">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин мягкостей «Мишка»">
-        </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="">Каталог товаров</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Вязание на заказ</a>
-              </li>
-            </ul>
-            <ul class="main-nav__list user-list">
-              <li class="user-list__item user-list__item--search">
-                <a class="user-list__link" href="#">Поиск по сайту</a>
-              </li>
-              <li class="user-list__item user-list__item--basket">
-                <a class="user-list__link" href="#">Корзина: пока пуста</a>
-              </li>
-            </ul>
-          </div>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--logo">
+              <a class="site-list__logo-link" href="index.html">
+                <img class="site-list__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин мягкостей «Мишка»">
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--catalog">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item site-list__item--form">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item site-list__item--search">
+              <a class="site-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item site-list__item--basket">
+              <a class="site-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+            <li class="site-list__item site-list__item--new">
+              <a class="site-list__link" href="#">Новые поступления</a>
+            </li>
+            <li class="site-list__item site-list__item--sale">
+              <a class="site-list__link" href="#">Распродажа</a>
+            </li>
+            <li class="site-list__item site-list__item--delivery">
+              <span>Бесплатная доставка по России</span>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -42,10 +52,10 @@
     <main class="page-main">
 
       <section class="catalog">
-        <div class="catalog__container">
+        <div class="catalog__title-container">
           <h1 class="catalog__title">Каталог товаров</h1>
         </div>
-        <div class="catalog__wrapper">
+        <div class="catalog__container">
           <article class="catalog__item item">
             <a class="item__link" href="catalog-item.html">
               <img class="item__link-img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
@@ -107,11 +117,13 @@
       </section>
 
       <article class="production">
-        <h2 class="production__title">Процесс производства</h2>
-        <!--<video class="production__show"></video>-->
-        <img class="production__show_img" src="img/video-mobile@1x.jpg">
-        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="production__button button" href="#">Сделать заказ</a>
+        <div class="production__cantainer">
+          <h2 class="production__title">Процесс производства</h2>
+          <!--<video class="production__show"></video>-->
+          <img class="production__show_img" src="img/video-mobile@1x.jpg">
+          <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="production__button button" href="#">Сделать заказ</a>
+        </div>
       </article>
 
     </main>
