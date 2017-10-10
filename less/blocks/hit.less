@@ -1,16 +1,18 @@
 /*hit - block*/
-.hit {
-  outline: 2px solid blue;
+.hit::after {
+  display: block;
+  content: "Волнистая линия";
+  width: 100%;
+  height: 7px;
+  background-color: green; /*Волнистая линия*/
 }
 
 .hit__container {
   position: relative;
   width: 320px;
   margin: 0 auto;
-  padding: 27px 30px;
+  padding: 25px 30px;
   padding-bottom: 39px;
-
-  outline: 2px solid red;
 }
 
 .hit__name {
@@ -76,18 +78,14 @@
 
 @media (min-width: @tablet-width) {
   .hit::after {
-    display: block;
-    content: "Волнистая линия";
-    width: 100%;
     height: 15px;
-    background-color: green; /*Волнистая линия*/
   }
 
   .hit__container {
     display: flex;
     flex-direction: column;
     width: 768px;
-    padding: 60px 100px 40px 50px;
+    padding: 45px 100px 40px 50px;
   }
 
   .hit__name {
@@ -100,7 +98,7 @@
 
   .hit__title {
     position: absolute;
-    top: 69px;
+    top: 54px;
     right: 73px;
     width: 80px;
 
@@ -109,7 +107,7 @@
 
   .hit__description {
     width: 290px;
-    margin-bottom: 42px;
+    margin-bottom: 35px;
 
     font-size: 17px;
     line-height: 30px;
@@ -117,7 +115,7 @@
 
   .hit__foto {
     position: absolute;
-    top: 166px;
+    top: 151px;
     left: 384px;
     width: 333px;
     height: 404px;
@@ -134,20 +132,16 @@
   .hit__button {
     width: 290px;
   }
-
-  .hit__container * {
-    outline: 1px solid blue;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .hit__container {
     width: 1150px;
-    padding: 140px 50px 75px 224px;
+    padding: 125px 50px 75px 224px;
   }
 
   .hit__title {
-    top: 150px;
+    top: 137px;
     left: 92px;
   }
 
@@ -160,15 +154,11 @@
   }
 
   .hit__foto {
-    top: 85px;
+    top: 72px;
     left: 575px;
     width: 525px;
     height: 636px;
 
     z-index: -1;
-  }
-
-  .hit__container * {
-    outline: 1px solid blue;
   }
 }

@@ -5,17 +5,13 @@
 
 .post__text {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
 
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
   color: @grey-text;
 }
-
-/*.post__info {
-  margin-bottom: 50px;
-}*/
 
 .post__author-name {
   font-size: 17px;
@@ -44,5 +40,11 @@
   .post__info {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post__text {
+    margin-bottom: 35px;
   }
 }
