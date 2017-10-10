@@ -28,10 +28,26 @@
 }
 
 @media (min-width: @tablet-width) {
+  .promo::after {
+    display: block;
+    content: "Волнистая линия";
+    width: 100%;
+    height: 15px;
+    margin-top: -15px;
+    background-color: green; /*Волнистая линия*/
+  }
+
   .promo__container {
     width: 768px;
     height: 730px; /*Временно*/
     padding: 0 50px;
+  }
+
+  .promo__container::after {
+    content: "Волнистая линия";
+    height: 15px;
+    margin-top: -15px;
+    background-color: yellow; /*Волнистая линия*/
   }
 
   .promo__title {
