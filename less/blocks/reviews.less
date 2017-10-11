@@ -1,10 +1,13 @@
 /*reviews - block*/
 .reviews::after {
   display: block;
-  content: "Волнистая линия";
-  width: 100%;
+  content: "";
+  width: 320px;
   height: 7px;
-  background-color: green; /*Волнистая линия*/
+  margin: 0 auto;
+
+  background-image: url("../img/zigzag-line-main-tab.svg");
+  background-repeat: repeat-x;
 }
 
 .reviews__container {
@@ -44,15 +47,16 @@
 
 @media (min-width: @tablet-width) {
   .reviews::after {
-    height: 15px;
+    width: 768px;
+    height: 17px;
   }
 
   .reviews__container {
     position: relative;
     width: 768px;
-    padding: 99px 50px 109px 50px;
+    padding: 115px 50px;
 
-    background: url("../img/review@1x.jpg") no-repeat 0 22px;
+    background: url("../img/review@1x.jpg") no-repeat 0 37px;
   }
 
   .reviews__title {
@@ -64,7 +68,7 @@
 
   .reviews__button {
     position: absolute;
-    top: 102px;
+    top: 118px;
     right: 50px;
     width: 175px;
     margin: 0;
@@ -73,11 +77,8 @@
 
 @media (min-width: @desktop-width) {
   .reviews::after {
-    display: block;
-    content: "Волнистая линия";
-    width: 100%;
-    height: 15px;
-    background-color: green; /*Волнистая линия*/
+    width: 1050px;
+    height: 23px;
   }
 
   .reviews__container {

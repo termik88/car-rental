@@ -1,7 +1,4 @@
 /*production - block*/
-.production * {
-  outline: 1px solid blue;
-}
 
 .production__cantainer {
   display: flex;
@@ -14,7 +11,7 @@
 
 .production__title {
   margin: 0 28px;
-  padding: 10px 0 10px 50px;
+  padding: 24px 0 24px 60px;
 
   font-size: 17px;
   font-weight: 700;
@@ -24,7 +21,7 @@
 
 .production__text {
   margin: 0;
-  padding: 20px 28px;
+  padding: 28px 33px;
 
   font-size: 13px;
   font-weight: 700;
@@ -44,6 +41,9 @@
   color: @grey-text;
   text-decoration: none;
   text-align: center;
+
+  border: 2px solid #444444;
+  background: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -53,15 +53,26 @@
     padding: 0 50px;
   }
 
+  .production__title {
+    margin-bottom: 0px;
+    padding: 39px 80px;
+
+    font-size: 20px;
+  }
+
   .production__show_img {
     order: -1;
+    width: 668px;
+    height: 455px;
   }
 
   .production__text {
-    padding: 20px 44px;
+    margin-bottom: 42px;
+    padding: 0 40px;
   }
 
   .production__button {
+    margin-bottom: 45px;
     width: 584px;
   }
 }
