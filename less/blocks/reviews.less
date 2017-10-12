@@ -1,13 +1,6 @@
 /*reviews - block*/
-.reviews::after {
-  display: block;
-  content: "";
-  width: 320px;
-  height: 7px;
-  margin: 0 auto;
-
-  background-image: url("../img/zigzag-line-main-tab.svg");
-  background-repeat: repeat-x;
+.reviews {
+  .zigzag-main(320px; 7px);
 }
 
 .reviews__container {
@@ -46,9 +39,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .reviews::after {
-    width: 768px;
-    height: 17px;
+  .reviews {
+    .zigzag-main(768px; 17px);
   }
 
   .reviews__container {
@@ -76,9 +68,8 @@
 }
 
 @media (min-width: @desktop-width) {
-  .reviews::after {
-    width: 1050px;
-    height: 23px;
+  .reviews {
+    .zigzag-main(1050px; 23px);
   }
 
   .reviews__container {

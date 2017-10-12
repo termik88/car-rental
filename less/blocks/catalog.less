@@ -28,21 +28,10 @@
 @media (min-width: @tablet-width) {
   .catalog__title-container {
     position: relative;
-    margin-bottom: 75px;
+    margin-bottom: 77px;
     padding-bottom: 0;
-  }
 
-  .catalog__title-container::after {
-    display: block;
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    width: 100%;
-    height: 24px;
-
-    background-image: url("../img/zigzag-line-top.svg");
-    background-repeat: repeat-x;
+    .zigzag-top (-12px, 24px, url("../img/zigzag-line-top.svg"));
   }
 
   .catalog__container {
@@ -66,8 +55,16 @@
     width: 1150px;
   }
 
+  .catalog__title-container {
+    margin-bottom: 125px;
+
+    .zigzag-top (-18px, 34px, url("../img/zigzag-line-top.svg"));
+  }
+
   .catalog__title {
     width: 1050px;
+    padding-bottom: 106px;
+
     font-size: 53px;
     line-height: 57px;
   }

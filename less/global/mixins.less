@@ -1,9 +1,28 @@
 /*mixins - block*/
-.no-outline() {
-  outline: none;
-  background: transparent;
+.zigzag-top(@pos-bottom; @height; @bg-url) {
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: @pos-bottom;
+    left: 0;
+    width: 100%;
+    height: @height;
 
-  &::before {
-    display: none;
+    background-image: @bg-url;
+    background-repeat: repeat-x;
+  }
+}
+
+.zigzag-main(@width; @height) {
+  &::after {
+    display: block;
+    content: "";
+    width: @width;
+    height: @height;
+    margin: 0 auto;
+
+    background-image: url("../img/zigzag-line-main-tab.svg");
+    background-repeat: repeat-x;
   }
 }

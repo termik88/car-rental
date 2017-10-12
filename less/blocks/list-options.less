@@ -8,12 +8,21 @@
 }
 
 .list-options__title {
+  display: flex;
   margin: 0;
 
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
   color: @bg-dark-green;
+}
+
+.list-options__title::after {
+  display: block;
+  content: "";
+  width: 100px;
+  height: 0;
+  border: 1px solid @bg-dark-green;
 }
 
 .list-options__label-option {

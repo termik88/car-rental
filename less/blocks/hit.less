@@ -1,13 +1,6 @@
 /*hit - block*/
-.hit::after {
-  display: block;
-  content: "";
-  width: 320px;
-  height: 7px;
-  margin: 0 auto;
-
-  background-image: url("../img/zigzag-line-main-tab.svg");
-  background-repeat: repeat-x;
+.hit {
+  .zigzag-main(320px; 7px);
 }
 
 .hit__container {
@@ -75,14 +68,14 @@
   color: @grey-text;
   text-transform: uppercase;
 
-  border: 2px solid #444444;
+  border: 2px solid @grey-text;
+  /*box-shadow: 0 0 0 2px @grey-text;*/
   background: none;
 }
 
 @media (min-width: @tablet-width) {
-  .hit::after {
-    width: 768px;
-    height: 17px;
+  .hit {
+    .zigzag-main(768px; 17px);
   }
 
   .hit__container {
@@ -139,9 +132,8 @@
 }
 
 @media (min-width: @desktop-width) {
-  .hit::after {
-    width: 1050px;
-    height: 23px;
+  .hit {
+    .zigzag-main(1050px; 23px);
   }
 
   .hit__container {

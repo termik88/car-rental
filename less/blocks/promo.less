@@ -1,7 +1,7 @@
 /*promo - block*/
 .promo {
   position: relative;
-  background-color: #eeeeee;
+  background-color: #f9f9f9;
 }
 
 .promo__container {
@@ -26,19 +26,8 @@
   .promo__container {
     width: 768px;
     padding: 0 50px;
-  }
 
-  .promo__container::after {
-    display: block;
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    width: 100%;
-    height: 24px;
-
-    background-image: url("../img/zigzag-line-top.svg");
-    background-repeat: repeat-x;
+    .zigzag-top (-12px, 24px, url("../img/zigzag-line-top.svg"));
   }
 
   .promo__title {
@@ -54,13 +43,8 @@
   .promo__container {
     width: 1150px;
     padding: 0 50px;
-  }
 
-  .promo__container::after {
-    bottom: -18px;
-    height: 34px;
-
-    background-image: url("../img/zigzag-line-top-desk.svg");
+    .zigzag-top (-18px, 34px, url("../img/zigzag-line-top-desk.svg"));
   }
 
   .promo__title {
