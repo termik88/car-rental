@@ -145,6 +145,10 @@
     }
   }
 
+  .list-options__input {
+    font-size: 19px;
+  }
+
   .list-options__container--type {
     margin-bottom: 30px;
 
@@ -164,7 +168,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 52px;
-    padding-bottom: 32px;
+    padding-bottom: 24px;
 
     .list-options__title {
       top: 42px;
@@ -181,19 +185,96 @@
       padding-left: 92px;
     }
   }
+
+  .list-options__container--fio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 46px;
+    padding-bottom: 21px;
+
+    .list-options__title {
+      top: 56px;
+    }
+
+    .list-options__label-option {
+      padding-top: 13px;
+      padding-right: 26px;
+    }
+
+    .list-options__input {
+      margin-bottom: 25px;
+      padding-left: 16px;
+      padding-top: 11px;
+    }
+
+    .list-options__input:first-of-type {
+      width: 426px;
+    }
+
+    .list-options__input:nth-of-type(2),
+    .list-options__input:nth-of-type(3) {
+      width: 374px;
+    }
+  }
+
+  .list-options__container--phone {
+    margin-bottom: 0;
+    padding-top: 51px;
+
+    .list-options__title {
+      top: 58px;
+    }
+
+    .list-options__input {
+      padding-left: 18px;
+    }
+  }
+
+  .list-options__container--email {
+    padding-top: 8px;
+    padding-bottom: 30px;
+
+    .list-options__title {
+      top: 16px;
+    }
+
+    .list-options__input {
+      padding-left: 16px;
+    }
+  }
+
+  .list-options__container--add {
+    padding-top: 47px;
+    padding-bottom: 52px;
+
+    .list-options__title {
+      top: 55px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .list-options__container {
     width: 1150px;
     padding: 0 225px;
+
+    .list-options__title {
+      left: 115px;
+    }
   }
 
   .list-options__container--color {
+    padding-top: 52px;
     padding-right: 50px;
+
+    .list-options__label-option {
+    }
+
+
   }
 
-  .list-options__title {
+  /*.list-options__title {
     left: 110px;
-  }
+  }*/
 }
