@@ -1,16 +1,12 @@
 /*contacts - block*/
 .contacts {
   position: relative;
-
-  outline: 2px solid blue;
 }
 
 .contacts__container {
   width: 320px;
   margin: 0 auto;
-  padding: 27px 30px;
-
-  outline: 2px solid red;
+  padding: 20px 30px 25px 30px;
 }
 
 .contacts__title {
@@ -30,7 +26,8 @@
   display: block;
   width: 260px;
   height: 52px;
-  margin: 10px auto;
+  margin: 20px auto;
+  margin-bottom: 16px;
   padding: 13px;
 
   font-size: 18px;
@@ -48,8 +45,14 @@
 @media (min-width: @tablet-width) {
   .contacts__container {
     width: 768px;
-    padding: 70px 50px;
-    padding-bottom: 20px;
+  }
+
+  .contacts__container:first-child {
+    padding: 61px 50px 19px 50px;
+  }
+
+  .contacts__container:last-child {
+    padding: 36px 0;
   }
 
   .contacts__title {
@@ -60,13 +63,10 @@
     line-height: 50px;
   }
 
-  .contacts__container * {
-    outline: 1px solid blue;
-  }
-
   .contacts__button {
+    margin-top: 17px;
+    margin-bottom: 19px;
     width: 230px;
-    margin-top: -20px;
   }
 }
 
@@ -77,7 +77,7 @@
     flex-wrap: wrap;
     width: 1150px;
     margin: 0 auto;
-    padding: 85px 50px 0 225px;
+    padding: 69px 50px 0 225px;
   }
 
   .contacts__container {
@@ -92,11 +92,13 @@
   .contacts__container:last-child {
     width: 873px;
     margin-top: -50px;
-    margin-bottom: 108px;
+    margin-bottom: 105px;
     padding: 0;
   }
 
   .contacts__title {
+    margin-bottom: 52px;
+
     font-size: 53px;
   }
 

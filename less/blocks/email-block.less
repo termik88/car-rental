@@ -17,15 +17,26 @@
 @media (min-width: @tablet-width) {
   .email-block {
     justify-content: flex-start;
+    width: 50%;
+
+    font-size: 17px;
+  }
+
+  .email-block__item--value {
+    padding-left: 23px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .email-block {
-    font-size: 17px;
+    justify-content: space-between;
+  }
+
+  .email-block__item--name {
+    white-space: nowrap;
   }
 
   .email-block__item--value {
-    padding-left: 30px;
+    padding-left: 23px;
   }
 }

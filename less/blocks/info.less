@@ -5,6 +5,7 @@
 
 .info__link-title {
   margin: 0;
+  margin-bottom: 6px;
 
   font-size: 17px;
   font-weight: 700;
@@ -13,8 +14,33 @@
 }
 
 .info__consist {
+  margin: 0;
+  margin-bottom: 19px;
+
   font-size: 13px;
   font-weight: 400;
   line-height: 30px;
   color: @grey-text;
+}
+
+@media (min-width: @tablet-width) {
+  .info__link-title {
+    margin-top: 26px;
+
+    font-size: 20px;
+  }
+
+  .info__consist {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info__link-title {
+    margin-top: 25px;
+  }
+
+  .info__consist {
+    margin-bottom: 0;
+  }
 }

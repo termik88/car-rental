@@ -1,25 +1,20 @@
 /*promo - block*/
 .promo {
-  background-color: #eeeeee;
-
-  outline: 2px solid blue;
+  position: relative;
+  background-color: #f9f9f9;
 }
 
 .promo__container {
   display: flex;
   flex-direction: column;
   width: 320px;
-  height: 490px; /*Временно*/
   margin: 0 auto;
 
   background: url("../img/hero-mobile@1x.jpg") no-repeat 50% -19px;
-
-  outline: 2px solid red;
 }
 
 .promo__title {
-  margin: 0 30px;
-  margin-top: 72px;
+  margin: 70px 30px 123px 30px;
 
   font-size: 27px;
   font-weight: 700;
@@ -28,30 +23,16 @@
 }
 
 @media (min-width: @tablet-width) {
-  .promo::after {
-    display: block;
-    content: "Волнистая линия";
-    width: 100%;
-    height: 15px;
-    margin-top: -15px;
-    background-color: green; /*Волнистая линия*/
-  }
-
   .promo__container {
     width: 768px;
-    height: 730px; /*Временно*/
     padding: 0 50px;
-  }
 
-  .promo__container::after {
-    content: "Волнистая линия";
-    height: 15px;
-    margin-top: -15px;
-    background-color: yellow; /*Волнистая линия*/
+    .zigzag-top (-12px, 24px, url("../img/zigzag-line-top.svg"));
   }
 
   .promo__title {
     margin-top: 152px;
+    margin-bottom: 375px;
 
     font-size: 43px;
     line-height: 50px;
@@ -62,9 +43,13 @@
   .promo__container {
     width: 1150px;
     padding: 0 50px;
+
+    .zigzag-top (-18px, 34px, url("../img/zigzag-line-top-desk.svg"));
   }
 
   .promo__title {
+    margin-bottom: 363px;
+
     font-size: 53px;
     line-height: 57px;
   }

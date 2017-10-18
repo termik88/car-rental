@@ -1,11 +1,6 @@
 /*catalog - block*/
-.catalog * {
-  outline: 1px solid blue;
-}
-
 .catalog__title-container {
   margin-bottom: 30px;
-  padding: 65px 0;
 
   background-color: @bg-grey;
 }
@@ -13,6 +8,7 @@
 .catalog__title {
   width: 260px;
   margin: 0 auto;
+  padding: 73px 0;
 
   font-size: 27px;
   font-weight: 700;
@@ -31,15 +27,11 @@
 
 @media (min-width: @tablet-width) {
   .catalog__title-container {
+    position: relative;
+    margin-bottom: 77px;
     padding-bottom: 0;
-  }
 
-  .catalog__title-container::after {
-    display: block;
-    content: "Волнистая линия";
-    width: 100%;
-    height: 15px;
-    background-color: green; /*Волнистая линия*/
+    .zigzag-top (-12px, 24px, url("../img/zigzag-line-top.svg"));
   }
 
   .catalog__container {
@@ -49,7 +41,7 @@
 
   .catalog__title {
     width: 668px;
-    margin-bottom: 65px;
+    padding: 95px 0 82px 0;
 
     font-size: 43px;
     line-height: 50px;
@@ -63,8 +55,16 @@
     width: 1150px;
   }
 
+  .catalog__title-container {
+    margin-bottom: 125px;
+
+    .zigzag-top (-18px, 34px, url("../img/zigzag-line-top.svg"));
+  }
+
   .catalog__title {
     width: 1050px;
+    padding-bottom: 106px;
+
     font-size: 53px;
     line-height: 57px;
   }

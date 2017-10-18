@@ -14,13 +14,13 @@
 .site-list__item {
   display: none;
   padding: 26px 0 28px 70px;
-  outline: 2px solid aqua;
+
+  box-shadow: inset 0 -1px 0 0 @bc-grey;
 
   &--logo {
     display: block;
     padding-top: 22px;
     padding-left: 86px;
-    outline: 2px solid deeppink;
   }
 
   &--new,
@@ -50,6 +50,9 @@
   .site-list__item {
     display: block;
     padding: 31px 0 33px 0;
+
+    box-shadow: none;
+    z-index: 10;
   }
 
   .site-list__item--logo {
@@ -68,6 +71,7 @@
     width: 83px;
 
     font-size: 1px;
+    box-shadow: 0 0 0 1px @bc-grey;
   }
 
   .site-list__item--basket {
@@ -98,6 +102,7 @@
     padding: 0;
 
     font-size: 15px;
+    font-weight: 400;
   }
 
   .site-list__item--new,
@@ -117,6 +122,7 @@
     width: 186px;
 
     font-size: 17px;
+    box-shadow: 1px 0 0 0 @bc-grey;
   }
 
   .site-list__item--form {
@@ -129,6 +135,8 @@
 
   .site-list__item--logo {
     order: 3;
+    width: 330px;
+
     text-align: center;
   }
 

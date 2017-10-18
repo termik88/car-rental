@@ -1,21 +1,19 @@
 /*hit - block*/
 .hit {
-  outline: 2px solid blue;
+  .zigzag-main(320px; 7px);
 }
 
 .hit__container {
   position: relative;
   width: 320px;
   margin: 0 auto;
-  padding: 27px 30px;
-  padding-bottom: 39px;
-
-  outline: 2px solid red;
+  padding: 30px 30px;
+  padding-bottom: 35px;
 }
 
 .hit__name {
   margin: 0;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 
   font-size: 25px;
   font-weight: 700;
@@ -25,7 +23,7 @@
 
 .hit__title {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 
   font-size: 17px;
   font-weight: 700;
@@ -45,7 +43,7 @@
 }
 
 .hit__foto {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   width: 260px;
   height: 315px;
 }
@@ -70,24 +68,21 @@
   color: @grey-text;
   text-transform: uppercase;
 
-  border: 2px solid #444444;
+  border: 2px solid @grey-text;
+  /*box-shadow: 0 0 0 2px @grey-text;*/
   background: none;
 }
 
 @media (min-width: @tablet-width) {
-  .hit::after {
-    display: block;
-    content: "Волнистая линия";
-    width: 100%;
-    height: 15px;
-    background-color: green; /*Волнистая линия*/
+  .hit {
+    .zigzag-main(768px; 17px);
   }
 
   .hit__container {
     display: flex;
     flex-direction: column;
     width: 768px;
-    padding: 60px 100px 40px 50px;
+    padding: 45px 100px 50px 50px;
   }
 
   .hit__name {
@@ -100,7 +95,7 @@
 
   .hit__title {
     position: absolute;
-    top: 69px;
+    top: 54px;
     right: 73px;
     width: 80px;
 
@@ -109,7 +104,7 @@
 
   .hit__description {
     width: 290px;
-    margin-bottom: 42px;
+    margin-bottom: 36px;
 
     font-size: 17px;
     line-height: 30px;
@@ -117,7 +112,7 @@
 
   .hit__foto {
     position: absolute;
-    top: 166px;
+    top: 151px;
     left: 384px;
     width: 333px;
     height: 404px;
@@ -134,20 +129,20 @@
   .hit__button {
     width: 290px;
   }
-
-  .hit__container * {
-    outline: 1px solid blue;
-  }
 }
 
 @media (min-width: @desktop-width) {
+  .hit {
+    .zigzag-main(1050px; 23px);
+  }
+
   .hit__container {
     width: 1150px;
-    padding: 140px 50px 75px 224px;
+    padding: 123px 50px 75px 224px;
   }
 
   .hit__title {
-    top: 150px;
+    top: 137px;
     left: 92px;
   }
 
@@ -159,16 +154,16 @@
     line-height: 57px;
   }
 
+  .hit__description {
+    margin-bottom: 47px;
+  }
+
   .hit__foto {
-    top: 85px;
+    top: 72px;
     left: 575px;
     width: 525px;
     height: 636px;
 
     z-index: -1;
-  }
-
-  .hit__container * {
-    outline: 1px solid blue;
   }
 }

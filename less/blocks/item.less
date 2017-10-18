@@ -1,6 +1,8 @@
 /*catalog__item item*/
 .item {
-  padding-bottom: 30px;
+  margin-bottom: 36px;
+
+  box-shadow: 0 0 0 1px @bc-grey;
 }
 
 .item__wrapper {
@@ -9,16 +11,19 @@
 
 .item__link {
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 @media (min-width: @tablet-width) {
   .item {
     display: flex;
+    margin-bottom: 54px;
   }
 
   .item__link {
     margin: 0;
+
+    line-height: 0;
   }
 
   .item__link-img {
@@ -37,5 +42,17 @@
   .item {
     display: block;
     width: 316px;
+    margin-bottom: 56px;
+  }
+
+  .item__wrapper {
+    justify-content: space-between;
+    height: 197px;
+
+    padding-right: 28px;
+  }
+
+  .item__link-img {
+    height: 462px;
   }
 }

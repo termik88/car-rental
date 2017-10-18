@@ -4,8 +4,7 @@
 }
 
 .ordering__container-title {
-  margin-bottom: 30px;
-  padding: 65px 0;
+  margin-bottom: 22px;
 
   background-color: @bg-grey;
 }
@@ -13,30 +12,27 @@
 .ordering__title {
   width: 260px;
   margin: 0 auto;
+  padding: 73px 0;
 
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
-  color: #231f20;
+  color: @black;
   text-align: center;
 }
 
 @media (min-width: @tablet-width) {
   .ordering__container-title {
+    position: relative;
+    margin-bottom: 70px;
     padding-bottom: 0;
-  }
 
-  .ordering__container-title::after {
-    display: block;
-    content: "Волнистая линия";
-    width: 100%;
-    height: 15px;
-    background-color: green; /*Волнистая линия*/
+    .zigzag-top (-12px, 24px, url("../img/zigzag-line-top.svg"));
   }
 
   .ordering__title {
-    width: 768px;
-    margin-bottom: 65px;
+    width: 668px;
+    padding: 95px 0 82px 0;
 
     font-size: 43px;
     line-height: 50px;
@@ -44,10 +40,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .ordering__container-title {
+    margin-bottom: 116px;
+
+    .zigzag-top (-18px, 34px, url("../img/zigzag-line-top.svg"));
+  }
+
   .ordering__title {
     width: 1050px;
+    padding-bottom: 106px;
 
-    font-size: 50px;
+    font-size: 53px;
     line-height: 57px;
   }
 }

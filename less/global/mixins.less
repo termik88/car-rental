@@ -1,9 +1,48 @@
 /*mixins - block*/
-.no-outline() {
-  outline: none;
-  background: transparent;
+.zigzag-top(@pos-bottom; @height; @bg-url) {
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: @pos-bottom;
+    left: 0;
+    width: 100%;
+    height: @height;
 
-  &::before {
-    display: none;
+    background-image: @bg-url;
+    background-repeat: repeat-x;
   }
+}
+
+.zigzag-main(@width; @height) {
+  &::after {
+    display: block;
+    content: "";
+    width: @width;
+    height: @height;
+    margin: 0 auto;
+
+    background-image: url("../img/zigzag-line-main-tab.svg");
+    background-repeat: repeat-x;
+  }
+}
+
+.section-container-320() {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 6px;
+  padding: 0 30px;
+}
+
+.section-container-768() {
+  position: relative;
+  width: 768px;
+  padding: 0 50px 0 217px;
+}
+
+.section-container-1150() {
+  width: 1150px;
+  padding: 0 225px;
 }
