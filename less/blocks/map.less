@@ -1,16 +1,12 @@
 /*map - block*/ /*Весь блок в разработке*/
 .map {
   display: flex;
-
-  background-color: @bg-grey;
-}
-
-#map {
   margin: 0 auto;
   height: 457px;
   width: 100%;
 
-  background-image: url("../img/map.png");
+  background-color: @bg-grey;
+  /* background-image: url("../img/map.png");*/
 }
 
 .map__img {
@@ -18,17 +14,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .map {
-    background-color: #444444; /*Времений фон*/
-  }
-
   .map__img {
     margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
-  #map {
+  .map {
     width: 525px;
     height: 457px;
     margin: 0;
