@@ -20,7 +20,11 @@
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--logo">
               <a class="site-list__logo-link" href="index.html">
-                <img class="site-list__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин мягкостей «Мишка»">
+                <picture>
+                  <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+                  <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+                  <img class="site-list__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+                </picture>
               </a>
             </li>
             <li class="site-list__item site-list__item--catalog">

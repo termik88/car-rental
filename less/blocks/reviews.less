@@ -48,7 +48,16 @@
     width: 768px;
     padding: 115px 50px;
 
-    background: url("../img/review@1x.jpg") no-repeat 0 37px;
+    background: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 37px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/review@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 37px;
+      background-size: auto 457px;
+    }
   }
 
   .reviews__title {
