@@ -20,7 +20,11 @@
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--logo">
               <a class="site-list__logo-link" href="index.html">
-                <img class="site-list__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин мягкостей «Мишка»">
+                <picture>
+                  <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+                  <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+                  <img class="site-list__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+                </picture>
               </a>
             </li>
             <li class="site-list__item site-list__item--catalog">
@@ -58,7 +62,11 @@
         <div class="catalog__container">
           <article class="catalog__item item">
             <a class="item__link" href="catalog-item.html">
-              <img class="item__link-img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+              <picture>
+                <source srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                <source srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="item__link-img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+              </picture>
             </a>
             <div class="item__wrapper">
               <div class="item__info info">
@@ -77,7 +85,11 @@
           </article>
           <article class="catalog__item item">
             <a class="item__link" href="catalog-item.html">
-              <img class="item__link-img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+              <picture>
+                <source srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                <source srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="item__link-img" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзина для белья">
+              </picture>
             </a>
             <div class="item__wrapper">
               <div class="item__info info">
@@ -96,7 +108,11 @@
           </article>
           <article class="catalog__item item">
             <a class="item__link" href="catalog-item.html">
-              <img class="item__link-img" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+              <picture>
+                <source srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                <source srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="item__link-img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Больша корзинка для игрушек">
+              </picture>
             </a>
             <div class="item__wrapper">
               <div class="item__info info">
@@ -121,7 +137,11 @@
           <div class="production__block">
             <h2 class="production__title">Процесс производства</h2>
             <!--<video class="production__show"></video>-->
-            <img class="production__show_img" src="img/video-mobile@1x.jpg">
+            <picture>
+              <source srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+              <source srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <img class="production__show_img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
+            </picture>
             <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <a class="production__button button" href="#">Сделать заказ</a>
           </div>

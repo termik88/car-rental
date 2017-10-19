@@ -19,7 +19,11 @@
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--logo">
-              <img class="site-list__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин мягкостей «Мишка»">
+              <picture>
+                <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+                <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+                <img class="site-list__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+              </picture>
             </li>
             <li class="site-list__item site-list__item--catalog">
               <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -82,7 +86,11 @@
               <td class="table-consist__row">15 см</td>
             </tr>
           </table>
-          <img class="hit__foto" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки">
+          <picture class="hit__picture">
+            <source srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+            <source srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <img class="hit__foto" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
+          </picture>
           <p class="hit__price">Цена: 990 руб.</p>
           <button class="hit__button button">Заказать</button>
         </div>
@@ -139,9 +147,13 @@
             </div>
           </article>
         </div>
-        <article class="contacts__item map"> <!--id="map"-->
+        <article class="contacts__item map">
           <h2 class="visually-hidden">Карта: Наше местоположение</h2>
-          <img class="map__img" src="img/map-mobile@1x.jpg" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          <picture class="map__picture">
+            <source srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+            <source srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <img class="map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          </picture>
         </article>
         <div class="contacts__container">
           <a class="contacts__button button" href="#">Напишите нам</a>
