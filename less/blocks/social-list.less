@@ -1,6 +1,36 @@
 /*page-footer__social social-list*/
 .social-list {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
   margin: 0;
-  padding: 0;
+  margin-bottom: 20px;
+  padding: 26px 62px 26px 57px;
+
+  list-style: none;
+  box-shadow: inset 0 -1px 0 0 #e5e5e5;
+}
+
+.social-button__link {
+  fill: #231f20;
+
+  &:hover,
+  &focus {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social-list {
+    width: 141px;
+    margin: 0;
+    padding: 0;
+
+    box-shadow: none;
+  }
 }

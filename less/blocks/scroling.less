@@ -12,6 +12,18 @@
 
   border: 1px solid @bc-grey;
   background: none;
+
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -24,6 +36,8 @@
 
   .scroling__button {
     width: 90px;
+
+    border: none;
   }
 }
 
