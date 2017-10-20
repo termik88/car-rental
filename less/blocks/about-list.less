@@ -18,64 +18,52 @@
   padding-top: 83px;
 }
 
-.about-list__item--ecology::before {
-  content: "";
+.about-list__svg {
   position: absolute;
-  top: 28px;
-  left: 8px;
-  width: 32px;
-  height: 37px;
-  background: url("../img/icon-feature-flower.svg") no-repeat;
-}
 
-.about-list__item--cheap::before {
-  content: "";
-  position: absolute;
-  top: 28px;
-  left: 0;
-  width: 50px;
-  height: 37px;
-  background: url("../img/icon-feature-money.svg") no-repeat;
-}
+  fill: @bg-dark-green;
 
-.about-list__item--likes::before {
-  content: "";
-  position: absolute;
-  top: 33px;
-  left: 7px;
-  width: 50px;
-  height: 37px;
-  background: url("../img/icon-feature-heart.svg") no-repeat;
-}
+  &--flower {
+    top: 28px;
+    left: 8px;
+    width: 32px;
+    height: 37px;
+  }
 
-.about-list__item--handmade::before {
-  content: "";
-  position: absolute;
-  top: 31px;
-  left: 4px;
-  width: 50px;
-  height: 37px;
-  background: url("../img/icon-feature-ball.svg") no-repeat;
-}
+  &--money {
+    top: 28px;
+    left: 0;
+    width: 47px;
+    height: 27px;
+  }
 
-.about-list__item--local::before {
-  content: "";
-  position: absolute;
-  top: 31px;
-  left: -6px;
-  width: 55px;
-  height: 37px;
-  background: url("../img/icon-feature-rocket.svg") no-repeat;
-}
+  &--heart {
+    top: 33px;
+    left: 7px;
+    width: 34px;
+    height: 27px;
+  }
 
-.about-list__item--presentable::before {
-  content: "";
-  position: absolute;
-  top: 31px;
-  left: 3px;
-  width: 55px;
-  height: 37px;
-  background: url("../img/icon-feature-gift.svg") no-repeat;
+  &--ball {
+    top: 31px;
+    left: 4px;
+    width: 35px;
+    height: 34px;
+  }
+
+  &--rocket {
+    top: 31px;
+    left: -6px;
+    width: 55px;
+    height: 23px;
+  }
+
+  &--gift {
+    top: 31px;
+    left: 3px;
+    width: 33px;
+    height: 32px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -91,64 +79,36 @@
     padding-top: 114px;
   }
 
-  .about-list__item--ecology::before {
-    content: "";
-    position: absolute;
-    top: 58px;
-    left: 8px;
-    width: 32px;
-    height: 37px;
-    background: url("../img/icon-feature-flower.svg") no-repeat;
-  }
+  .about-list__svg {
+    &--flower {
+      top: 58px;
+      left: 8px;
+    }
 
-  .about-list__item--cheap::before {
-    content: "";
-    position: absolute;
-    top: 68px;
-    left: 0;
-    width: 50px;
-    height: 37px;
-    background: url("../img/icon-feature-money.svg") no-repeat;
-  }
+    &--money {
+      top: 68px;
+      left: 0;
+    }
 
-  .about-list__item--likes::before {
-    content: "";
-    position: absolute;
-    top: 65px;
-    left: 7px;
-    width: 50px;
-    height: 37px;
-    background: url("../img/icon-feature-heart.svg") no-repeat;
-  }
+    &--heart {
+      top: 65px;
+      left: 7px;
+    }
 
-  .about-list__item--handmade::before {
-    content: "";
-    position: absolute;
-    top: 65px;
-    left: 4px;
-    width: 50px;
-    height: 37px;
-    background: url("../img/icon-feature-ball.svg") no-repeat;
-  }
+    &--ball {
+      top: 65px;
+      left: 4px;
+    }
 
-  .about-list__item--local::before {
-    content: "";
-    position: absolute;
-    top: 71px;
-    left: -6px;
-    width: 55px;
-    height: 37px;
-    background: url("../img/icon-feature-rocket.svg") no-repeat;
-  }
+    &--rocket {
+      top: 71px;
+      left: -6px;
+    }
 
-  .about-list__item--presentable::before {
-    content: "";
-    position: absolute;
-    top: 63px;
-    left: 3px;
-    width: 55px;
-    height: 37px;
-    background: url("../img/icon-feature-gift.svg") no-repeat;
+    &--gift {
+      top: 63px;
+      left: 3px;
+    }
   }
 }
 

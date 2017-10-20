@@ -1,5 +1,17 @@
 /*page-footer__developer developer*/
+.developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  width: 182px;
+
+  cursor: pointer;
+}
+
 .developer__studio {
+  margin: 0;
+
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
@@ -8,4 +20,12 @@
 
 .developer__logo-icon {
   fill: @bg-dark-green;
+}
+
+.developer__logo {
+  line-height: 0;
+}
+
+.developer:active {
+  opacity: 0.3;
 }
