@@ -1,4 +1,32 @@
 /*mixins - block*/
+.btn-mix() {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: @grey-text;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  border: 2px solid @grey-text;
+
+  background: none;
+  background-color: @white;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: @white;
+
+    background-color: @grey-text;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
 .zigzag-top(@pos-bottom; @height; @bg-url) {
   &::after {
     display: block;

@@ -1,8 +1,44 @@
 /*modal - block*/
+.modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(255, 255, 255, 0.9);
+
+  z-index: 30;
+}
+
+.modal {
+  display: none;
+  margin: 200px auto;
+
+  background-color: @white;
+}
+
 .modal__container {
   width: 320px;
   margin: 0 auto;
   padding: 46px 30px;
+
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.modal-wrapper-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-show {
+  display: flex;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 @media (min-width: @tablet-width) {

@@ -105,6 +105,10 @@
             </tr>
           </table>
           <picture class="hit__picture">
+            <source type="image/webp" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x" media="(min-width: 1150px)">
+            <source type="image/webp" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x" media="(min-width: 768px)">
+            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+
             <source srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x" media="(min-width: 1150px)">
             <source srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x" media="(min-width: 768px)">
             <img class="hit__foto" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
@@ -202,6 +206,10 @@
         <article class="contacts__item map">
           <h2 class="visually-hidden">Карта: Наше местоположение</h2>
           <picture class="map__picture">
+            <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x" media="(min-width: 1150px)">
+            <source type="image/webp" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" media="(min-width: 768px)">
+            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+
             <source srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x" media="(min-width: 1150px)">
             <source srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x" media="(min-width: 768px)">
             <img class="map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
@@ -258,29 +266,25 @@
       </div>
     </footer>
 
-    <section class="modal">
-      <div class="modal__container">
-        <form class="modal__form order-form" action="https://echo.htmlacademy.ru">
-          <h2 class="order-form__title">Добавить в корзину</h2>
-          <p class="order-form__subtitle">Выберите размер:</p>
-          <div class="order-form__size selection">
-            <label class="selection__label-option" for="type-group-0">
-              <input class="selection__option visually-hidden" type="radio" name="type-group" id="type-group-0" value="s" checked>
-              S
-            </label>
-            <label class="selection__label-option" for="type-group-1">
-              <input class="selection__option visually-hidden" type="radio" name="type-group" id="type-group-1" value="m">
-              M
-            </label>
-            <label class="selection__label-option" for="type-group-2">
-              <input class="selection__option visually-hidden" type="radio" name="type-group" id="type-group-2" value="l">
-              L
-            </label>
-          </div>
-          <input class="order-form__button" type="submit" name="order-form-add" value="Добавить">
-        </form>
-      </div>
-    </section>
+    <div class="modal-wrapper">
+      <section class="modal">
+        <div class="modal__container">
+          <form class="modal__form order-form" action="https://echo.htmlacademy.ru">
+            <h2 class="order-form__title">Добавить в корзину</h2>
+            <p class="order-form__subtitle">Выберите размер:</p>
+            <div class="order-form__size selection">
+              <input class="selection__option" type="radio" name="type-group" id="type-group-0" value="s" checked>
+              <label class="selection__label-option" for="type-group-0">S</label>
+              <input class="selection__option" type="radio" name="type-group" id="type-group-1" value="m">
+              <label class="selection__label-option" for="type-group-1">M</label>
+              <input class="selection__option" type="radio" name="type-group" id="type-group-2" value="l">
+              <label class="selection__label-option" for="type-group-2">L</label>
+            </div>
+            <input class="order-form__button" type="submit" name="order-form-add" value="Добавить">
+          </form>
+        </div>
+      </section>
+    </div>
 
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0Bm_nmmWhk21_hMGchc5d2q70EU350QM&callback=initMap">
