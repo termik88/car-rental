@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  background-color: @white;
 }
 
 .order-form__title {
@@ -22,11 +24,15 @@
   color: @grey-text;
 }
 
-.selection__option {
+.selection__label-option {
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
   color: @grey-text;
+}
+
+.selection__option {
+  display: none;
 }
 
 .order-form__button {
@@ -38,6 +44,10 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @white;
+
+  background: none;
+  border: none;
+  background-color: @bg-dark-green;
 }
 
 @media (min-width: @tablet-width) {

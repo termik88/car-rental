@@ -38,6 +38,8 @@
   font-weight: 700;
   line-height: 18px;
   color: @black;
+
+  cursor: pointer;
 }
 
 .section-type__label-option::before {
@@ -59,7 +61,40 @@
   left: 12px;
   width: 16px;
   height: 17px;
-  background: #63d1bb;
+  background: @bg-dark-green;
+  border-radius: 50%;
+}
+
+.section-type__option:checked:hover + .section-type__label-option::before,
+.section-type__option:checked:focus + .section-type__label-option::before {
+  border: 2px solid @bg-dark-green;
+}
+
+.section-type__option:checked:active + .section-type__label-option::before {
+  border: 2px solid @bg-grey;
+}
+
+.section-type__option:checked:active + .section-type__label-option::after {
+  background-color: @white;
+}
+
+.section-type__option:hover + .section-type__label-option::before,
+.section-type__option:focus + .section-type__label-option::before {
+  border: 2px solid @bg-dark-green;
+}
+
+.section-type__option:active + .section-type__label-option::before {
+  border: 2px solid @bg-grey;
+}
+
+.section-type__option:active + .section-type__label-option::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 16px;
+  height: 17px;
+  background: @bg-dark-green;
   border-radius: 50%;
 }
 

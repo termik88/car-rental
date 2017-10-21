@@ -71,6 +71,10 @@
           <article class="catalog__item item">
             <a class="item__link" href="catalog-item.html">
               <picture>
+                <source type="image/webp" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x" media="(min-width: 1150px)">
+                <source type="image/webp" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
+
                 <source srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x" media="(min-width: 1150px)">
                 <source srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x" media="(min-width: 768px)">
                 <img class="item__link-img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
@@ -87,6 +91,9 @@
                 <span class="order__price">1 200 руб.</span>
                 <a class="order__modal-link" href="#">
                   <span class="visually-hidden">Заказать</span>
+                  <svg class="order__link-icon" width="21px" height="18px">
+                    <use xlink:href="img/sprite.svg#icon-basket"/>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -94,6 +101,10 @@
           <article class="catalog__item item">
             <a class="item__link" href="catalog-item.html">
               <picture>
+                <source type="image/webp" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x" media="(min-width: 1150px)">
+                <source type="image/webp" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
+
                 <source srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x" media="(min-width: 1150px)">
                 <source srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x" media="(min-width: 768px)">
                 <img class="item__link-img" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзина для белья">
@@ -110,6 +121,9 @@
                 <span class="order__price">690 руб.</span>
                 <a class="order__modal-link" href="#">
                   <span class="visually-hidden">Заказать</span>
+                  <svg class="order__link-icon" width="21px" height="18px">
+                    <use xlink:href="img/sprite.svg#icon-basket"/>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -117,6 +131,10 @@
           <article class="catalog__item item">
             <a class="item__link" href="catalog-item.html">
               <picture>
+                <source type="image/webp" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x" media="(min-width: 1150px)">
+                <source type="image/webp" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
+
                 <source srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x" media="(min-width: 1150px)">
                 <source srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x" media="(min-width: 768px)">
                 <img class="item__link-img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Больша корзинка для игрушек">
@@ -133,6 +151,9 @@
                 <span class="order__price">1 500 руб.</span>
                 <a class="order__modal-link" href="#">
                   <span class="visually-hidden">Заказать</span>
+                  <svg class="order__link-icon" width="21px" height="18px">
+                    <use xlink:href="img/sprite.svg#icon-basket"/>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -143,13 +164,25 @@
       <article class="production">
         <div class="production__cantainer">
           <div class="production__block">
+            <svg class="production__icon-video" width="34px" height="32px">
+              <use xlink:href="img/sprite.svg#icon-video"/>
+            </svg>
             <h2 class="production__title">Процесс производства</h2>
             <!--<video class="production__show"></video>-->
-            <picture>
-              <source srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x" media="(min-width: 1150px)">
-              <source srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x" media="(min-width: 768px)">
-              <img class="production__show_img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
-            </picture>
+            <div class="production__video">
+              <picture class="production__picture">
+                <source type="image/webp" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x" media="(min-width: 1150px)">
+                <source type="image/webp" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+
+                <source srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                <source srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="production__show_img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
+              </picture>
+              <svg class="production__icon-play" width="100px" height="76px">
+                <use xlink:href="img/sprite.svg#icon-play"/>
+              </svg>
+            </div>
             <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <a class="production__button button" href="#">Сделать заказ</a>
           </div>
@@ -202,29 +235,27 @@
       </div>
     </footer>
 
-    <section class="modal">
-      <div class="modal__container">
-        <form class="modal__form order-form" action="https://echo.htmlacademy.ru">
-          <h2 class="order-form__title">Добавить в корзину</h2>
-          <p class="order-form__subtitle">Выберите размер</p>
-          <div class="order-form__size selection">
-            <label class="selection__label-option" for="type-group-0">
-              <input class="selection__option visually-hidden" type="radio" name="type-group" id="type-group-0" value="s" checked>
-              S
-            </label>
-            <label class="selection__label-option" for="type-group-1">
-              <input class="selection__option visually-hidden" type="radio" name="type-group" id="type-group-1" value="m">
-              M
-            </label>
-            <label class="selection__label-option" for="type-group-2">
-              <input class="selection__option visually-hidden" type="radio" name="type-group" id="type-group-2" value="l">
-              L
-            </label>
-          </div>
-          <input class="order-form__button" type="submit" name="order-form-add" value="Добавить">
-        </form>
-      </div>
-    </section>
+    <div class="modal-wrapper">
+      <section class="modal">
+        <div class="modal__container">
+          <form class="modal__form order-form" action="https://echo.htmlacademy.ru">
+            <h2 class="order-form__title">Добавить в корзину</h2>
+            <p class="order-form__subtitle">Выберите размер:</p>
+            <div class="order-form__size selection">
+              <input class="selection__option" type="radio" name="type-group" id="type-group-0" value="s" checked>
+              <label class="selection__label-option" for="type-group-0">S</label>
+              <input class="selection__option" type="radio" name="type-group" id="type-group-1" value="m">
+              <label class="selection__label-option" for="type-group-1">M</label>
+              <input class="selection__option" type="radio" name="type-group" id="type-group-2" value="l">
+              <label class="selection__label-option" for="type-group-2">L</label>
+            </div>
+            <input class="order-form__button" type="submit" name="order-form-add" value="Добавить">
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!--<script type="text/javascript" src="js/scripts.js"></script>-->
 
   </body>
 </html>

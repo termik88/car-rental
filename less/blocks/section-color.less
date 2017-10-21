@@ -61,6 +61,38 @@
   background-size: 22px 17px;
 }
 
+.section-color__option:checked:hover + .section-color__label-option::before,
+.section-color__option:checked:focus + .section-color__label-option::before {
+  border-color: @bg-dark-green;
+}
+
+.section-color__option:checked:active + .section-color__label-option::before {
+  border: 2px solid @bg-grey;
+}
+
+.section-color__option:checked:active + .section-color__label-option::after {
+  background: none;
+}
+
+.section-color__option:hover + .section-color__label-option::before,
+.section-color__option:focus + .section-color__label-option::before {
+  border-color: @bg-dark-green;
+}
+
+.section-color__option:active + .section-color__label-option::before {
+  border: 2px solid @bg-grey;
+}
+
+.section-color__option:active + .section-color__label-option::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 9px;
+  width: 22px;
+  height: 17px;
+  background: url("../img/icon-tick.svg") no-repeat 50% 50%;
+  background-size: 22px 17px;
+}
 
 @media (min-width: @tablet-width) {
   .section-color__container {

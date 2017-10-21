@@ -1,5 +1,7 @@
 /*item__order order*/
 .order {
+  display: flex;
+  justify-content: space-between;
   padding: 22px 0;
 
   box-shadow: 0 -1px 0 0 @bc-grey;
@@ -11,6 +13,21 @@
   line-height: 24px;
   color: @black;
 }
+
+.order__link-icon {
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    fill: @bg-dark-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 
 @media (min-width: @tablet-width) {
   .order {

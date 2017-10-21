@@ -33,12 +33,6 @@
   text-decoration: none;
 }
 
-.categories-list__link:hover,
-.categories-list__link:focus {
-  padding-bottom: 33px;
-}
-
-
 .categories-list__link-icon {
   position: absolute;
   top: 30px;
@@ -53,6 +47,23 @@
   &--toy {
     right: 33px;
   }
+}
+
+.categories-list__item:hover,
+.categories-list__item:focus {
+  margin-top: -5px;
+
+  .categories-list__link {
+    padding-bottom: 33px;
+  }
+
+  .categories-list__link-icon {
+    top: 25px;
+  }
+}
+
+.categories-list__item:active .categories-list__link {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: @tablet-width) {
