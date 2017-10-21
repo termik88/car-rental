@@ -30,8 +30,8 @@ function initMap() {
   });
 }
 
-/*Модальное окно выбор размера - Индекс*/
-var link = document.querySelector(".hit__button", ".order__modal-link");
+/*Модальное окно выбор размера*/
+var link = document.querySelector(".button-order");
 
 var popup = document.querySelector(".modal");
 var wrapper = document.querySelector(".modal-wrapper");
@@ -55,28 +55,3 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-/*Модальное окно выбор размера - Каталог*/
-/*
-var link = document.querySelector(".order__modal-link");
-
-var popup = document.querySelector(".modal");
-var wrapper = document.querySelector(".modal-wrapper");
-
-link.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.add("modal-show");
-  wrapper.classList.add("modal-wrapper-show")
-});
-
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (popup.classList.contains("modal-show")) {
-      popup.classList.remove("modal-show");
-      popup.classList.remove("modal-error");
-    }
-    if (wrapper.classList.contains("modal-wrapper-show")) {
-      wrapper.classList.remove("modal-wrapper-show");
-
-    }
-  }
-});*/
