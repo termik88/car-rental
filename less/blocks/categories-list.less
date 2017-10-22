@@ -35,17 +35,18 @@
 
 .categories-list__link-icon {
   position: absolute;
-  top: 30px;
 
   fill: #149080;
   opacity: 0.5;
 
   &--interior {
-    right: 38px;
+    top: 23px;
+    right: 37px;
   }
 
   &--toy {
-    right: 33px;
+    top: 21px;
+    right: 28px;
   }
 }
 
@@ -77,5 +78,24 @@
   .categories-list__link {
     padding-left: 35px;
     padding-bottom: 32px;
+  }
+
+  .categories-list__link-icon {
+    &--interior {
+      top: 28px;
+      right: 37px;
+    }
+
+    &--toy {
+      top: 30px;
+      right: 34px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .categories-list__link {
+    padding-top: 28px;
+    padding-bottom: 30px;
   }
 }
