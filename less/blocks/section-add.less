@@ -42,20 +42,30 @@
   line-height: 18px;
   color: @grey-text;
 
-  border-bottom: 2px solid @grey-text;
+  border: 2px solid @grey-text;
+  outline: none;
+}
+
+.section-add__input:hover,
+.section-add__input:focus {
+  border: 2px solid @bg-dark-green;
+}
+
+.section-add__input:active {
+  border: 2px solid @bg-dark-green;
 }
 
 @media (min-width: @tablet-width) {
   .section-add__container {
     .section-container-768();
 
-    padding-top: 47px;
-    padding-bottom: 52px;
+    padding-top: 45px;
+    padding-bottom: 49px;
   }
 
   .section-add__title {
     position: absolute;
-    top: 55px;
+    top: 54px;
     left: 50px;
     width: auto;
   }

@@ -2,7 +2,7 @@
 .production__cantainer {
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 58px;
+  margin-bottom: 60px;
   padding: 0 30px;
 }
 
@@ -11,7 +11,7 @@
 
   display: flex;
   flex-direction: column;
-  border: 1px solid @bc-grey;
+  outline: 1px solid @bc-grey;
 
   &:hover,
   &:focus {
@@ -41,6 +41,8 @@
   position: relative;
   width: 260px;
   height: 150px;
+
+  background-color: @bc-grey;
 }
 
 .production__picture {
@@ -85,8 +87,9 @@
   margin-bottom: 32px;
   padding: 15px;
 
-  /*line-height: 16px;*/
   .btn-mix;
+  font-size: 17px;
+  line-height: 16px;
 }
 
 @media (min-width: @tablet-width) {
@@ -103,7 +106,7 @@
 
   .production__title {
     margin-bottom: 0;
-    padding: 39px 80px;
+    padding: 38px 80px 31px 80px;
 
     font-size: 20px;
   }
@@ -121,8 +124,11 @@
   }
 
   .production__text {
-    margin-bottom: 42px;
+    margin-bottom: 37px;
     padding: 0 40px;
+
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .production__button {

@@ -54,50 +54,54 @@
   box-sizing: border-box;
 }
 
+.section-type__label-option::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 16px;
+  height: 17px;
+  background: @white;
+  border-radius: 50%;
+}
+
 .section-type__option:checked + .section-type__label-option::after {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  width: 16px;
-  height: 17px;
   background: @bg-dark-green;
-  border-radius: 50%;
 }
 
-.section-type__option:checked:hover + .section-type__label-option::before,
-.section-type__option:checked:focus + .section-type__label-option::before {
-  border: 2px solid @bg-dark-green;
+.section-type__option:checked:hover,
+.section-type__option:checked:focus {
+  + .section-type__label-option::before {
+    border: 2px solid @bg-dark-green;
+  }
 }
 
-.section-type__option:checked:active + .section-type__label-option::before {
-  border: 2px solid @bg-grey;
+.section-type__option:checked:active {
+  + .section-type__label-option::before {
+    border: 2px solid @bg-grey;
+  }
+
+  + .section-type__label-option::after {
+    background-color: @white;
+  }
 }
 
-.section-type__option:checked:active + .section-type__label-option::after {
-  background-color: @white;
+.section-type__option:hover,
+.section-type__option:focus {
+  + .section-type__label-option::before {
+    border: 2px solid @bg-dark-green;
+  }
 }
 
-.section-type__option:hover + .section-type__label-option::before,
-.section-type__option:focus + .section-type__label-option::before {
-  border: 2px solid @bg-dark-green;
-}
+.section-type__option:active {
+  + .section-type__label-option::after {
+    background: @bg-dark-green;
+  }
 
-.section-type__option:active + .section-type__label-option::before {
-  border: 2px solid @bg-grey;
+  + .section-type__label-option::before {
+    border: 2px solid @bg-grey;
+  }
 }
-
-.section-type__option:active + .section-type__label-option::after {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  width: 16px;
-  height: 17px;
-  background: @bg-dark-green;
-  border-radius: 50%;
-}
-
 
 @media (min-width: @tablet-width) {
   .section-type__container {
@@ -130,11 +134,14 @@
     height: 52px;
   }
 
-  .section-type__option:checked + .section-type__label-option::after {
-    top: 17px;
-    left: 16px;
-    width: 20px;
-    height: 20px;
+  .section-type__option:checked,
+  .section-type__option:active {
+    + .section-type__label-option::after {
+      top: 17px;
+      left: 16px;
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 

@@ -30,17 +30,11 @@ function initMap() {
   });
 }
 
-/*Модальное окно выбор размера - Индекс*/
-var link = document.querySelector(".hit__button", ".order__modal-link");
-
-var popup = document.querySelector(".modal");
-var wrapper = document.querySelector(".modal-wrapper");
-
-link.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.add("modal-show");
-  wrapper.classList.add("modal-wrapper-show")
-});
+/*Модальное окно выбор размера*/
+var linkIndex = document.querySelector('.hit__button');
+var popup = document.querySelector('.modal');
+var wrapper = document.querySelector('.modal-wrapper');
+var linkCatalog = document.querySelectorAll('.order__modal-link');
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
@@ -55,28 +49,36 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-/*Модальное окно выбор размера - Каталог*/
-/*
-var link = document.querySelector(".order__modal-link");
+if(linkCatalog != null) {
+  [].forEach.call(linkCatalog, function(item) {
+    item.addEventListener('click', function(event) {
+      event.preventDefault();
+      popup.classList.add('modal-show');
+      wrapper.classList.add('modal-wrapper-show');
+    });
+  });
+};
 
-var popup = document.querySelector(".modal");
-var wrapper = document.querySelector(".modal-wrapper");
+if(linkIndex != null) {
+  linkIndex.addEventListener('click', function(event) {
+    event.preventDefault();
+    popup.classList.add('modal-show');
+    wrapper.classList.add('modal-wrapper-show');
+  });
+};
 
-link.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.add("modal-show");
-  wrapper.classList.add("modal-wrapper-show")
-});
+/*Кнопка в хедаре*/
+var navMain = document.querySelector('.main-nav');
+var navToggle = document.querySelector('.main-nav__toggle');
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (popup.classList.contains("modal-show")) {
-      popup.classList.remove("modal-show");
-      popup.classList.remove("modal-error");
-    }
-    if (wrapper.classList.contains("modal-wrapper-show")) {
-      wrapper.classList.remove("modal-wrapper-show");
+navMain.classList.remove('main-nav--nojs');
 
-    }
+navToggle.addEventListener('click', function() {
+  if (navMain.classList.contains('main-nav--closed')) {
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+  } else {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
   }
-});*/
+});

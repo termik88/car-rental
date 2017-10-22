@@ -11,19 +11,32 @@
 }
 
 .email-block__item--value {
+  color: @grey-text;
   text-decoration: none;
+
+  box-shadow: 0 1px 0 0 @bg-dark-green;
+
+  &:hover,
+  &:focus {
+    color: @bg-dark-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .email-block {
     justify-content: flex-start;
+    align-items: flex-start;
     width: 50%;
 
     font-size: 17px;
   }
 
-  .email-block__item--value {
-    padding-left: 23px;
+  .email-block__item--name {
+    padding-right: 23px;
   }
 }
 
@@ -34,9 +47,5 @@
 
   .email-block__item--name {
     white-space: nowrap;
-  }
-
-  .email-block__item--value {
-    padding-left: 23px;
   }
 }
