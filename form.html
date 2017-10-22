@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Мишка</title>
     <meta charset="utf-8">
@@ -9,14 +9,31 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
 
   <body>
 
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <div class="page_header__container">
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg class="main-nav__toggle-icon main-nav__toggle-icon--open" width="20px" height="14px">
+              <use xlink:href="#icon-menu-open"/>
+            </svg>
+            <svg class="main-nav__toggle-icon main-nav__toggle-icon--close" width="21px" height="20px">
+              <use xlink:href="#icon-menu-close"/>
+            </svg>
+          </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--logo">
               <a class="site-list__logo-link" href="index.html">
@@ -36,14 +53,14 @@
             <li class="site-list__item site-list__item--search">
               <a class="site-list__link site-list__link--search" href="#">Поиск по сайту
                 <svg class="site-list__link-icon site-list__link-icon--search" width="18px" height="18px">
-                  <use xlink:href="img/sprite.svg#icon-search"/>
+                  <use xlink:href="#icon-search"/>
                 </svg>
               </a>
             </li>
             <li class="site-list__item site-list__item--basket">
               <a class="site-list__link site-list__link--basket" href="#">Корзина: пока пуста
                 <svg class="site-list__link-icon site-list__link-icon--basket" width="21px" height="18px">
-                  <use xlink:href="img/sprite.svg#icon-basket"/>
+                  <use xlink:href="#icon-basket"/>
                 </svg>
               </a>
             </li>
@@ -131,7 +148,7 @@
               <h3 class="section-phone__title">Тел</h3>
               <input class="section-phone__input" type="text" name="phone" id="phone" placeholder="+7 XXX XX XX*" required>
               <svg class="section-phone__input-icon" width="25px" height="24px">
-                <use xlink:href="img/sprite.svg#icon-phone"/>
+                <use xlink:href="#icon-phone"/>
               </svg>
             </div>
           </div>
@@ -140,7 +157,7 @@
               <h3 class="section-email__title">e-mail</h3>
               <input class="section-email__input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
               <svg class="section-email__input-icon" width="32px" height="32px">
-                <use xlink:href="img/sprite.svg#icon-mail"/>
+                <use xlink:href="#icon-mail"/>
               </svg>
             </div>
           </div>
@@ -165,7 +182,7 @@
       <div class="page-footer__container">
         <a class="page-footer__logo">
           <svg width="102px" height="34px">
-            <use xlink:href="img/sprite.svg#icon-logo-footer"/>
+            <use xlink:href="#logo-footer"/>
           </svg>
         </a>
         <ul class="page-footer__social social-list">
@@ -173,7 +190,7 @@
             <a class="social-button__link" href="#">
               <span class="visually-hidden">Инстаграм</span>
               <svg class="social-button__svg" width="22" height="21">
-                <use xlink:href="img/sprite.svg#icon-insta"/>
+                <use xlink:href="#icon-insta"/>
               </svg>
             </a>
           </li>
@@ -181,7 +198,7 @@
             <a class="social-button__link" href="#">
               <span class="visually-hidden">Фейсбук</span>
               <svg class="social-button__svg" width="15" height="28">
-                <use xlink:href="img/sprite.svg#icon-fb"/>
+                <use xlink:href="#icon-fb"/>
               </svg>
             </a>
           </li>
@@ -189,7 +206,7 @@
             <a class="social-button__link" href="#">
               <span class="visually-hidden">ВК</span>
               <svg class="social-button__svg" width="23" height="20">
-                <use xlink:href="img/sprite.svg#icon-twitter"/>
+                <use xlink:href="#icon-twitter"/>
               </svg>
             </a>
           </li>
@@ -198,7 +215,7 @@
           <span class="developer__studio">Разработано</span>
           <a class="developer__logo" href="https://up.htmlacademy.ru/adaptive/12">
             <svg class="developer__logo-icon" width="27px" height="34px">
-              <use xlink:href="img/sprite.svg#icon-html-academy"/>
+              <use xlink:href="#logo-htmlacademy"/>
             </svg>
           </a>
         </div>
