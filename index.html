@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <title>Мишка</title>
     <meta charset="utf-8">
     <meta name="keywords" content="">
@@ -207,7 +207,7 @@
           <svg class="contacts__icon-flag" width="47" height="81">
             <use xlink:href="#icon-flag"/>
           </svg>
-          <article class="contacts__item contacts-info">
+          <div class="contacts__item contacts-info">
             <div class="contacts-info__item email-block">
               <span class="email-block__item  email-block__item--name">e-mail:</span>
               <a class="email-block__item  email-block__item--value" href="#">info@mimimishkashop.ru</a>
@@ -216,9 +216,9 @@
               <span class="address-block__item  address-block__item--name">адрес:</span>
               <p class="address-block__item  address-block__item--value">г. Санкт-Петербург,<br> ул. Большая Конюшенная, д. 19/8, офис 101</p>
             </div>
-          </article>
+          </div>
         </div>
-        <article class="contacts__item map">
+        <div class="contacts__item map">
           <h2 class="visually-hidden">Карта: Наше местоположение</h2>
           <picture class="map__picture">
             <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x" media="(min-width: 1150px)">
@@ -229,7 +229,7 @@
             <source srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x" media="(min-width: 768px)">
             <img class="map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
           </picture>
-        </article>
+        </div>
         <div class="contacts__container">
           <a class="contacts__button button" href="contact-us.html">Напишите нам</a>
         </div>
@@ -305,7 +305,7 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0Bm_nmmWhk21_hMGchc5d2q70EU350QM&callback=initMap">
     </script>
 
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/scripts.min.js"></script>
 
   </body>
 </html>
