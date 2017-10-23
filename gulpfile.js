@@ -101,12 +101,12 @@ gulp.task("scripts", function() {
     .pipe(rename("scripts.min.js"))
     .pipe(gulp.dest("build/js"));
 });
-
+/*
 gulp.task("minify", function() {
   return gulp.src("*.html")
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
-});
+});*/
 
 gulp.task("build", function(done) {
   run(
@@ -116,7 +116,7 @@ gulp.task("build", function(done) {
     "sprite",
     "scripts",
     "html",
-    "minify",
+   /* "minify",*/
     done
   );
 });
