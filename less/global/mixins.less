@@ -27,9 +27,9 @@
   }
 }
 
-.zigzag-top(@pos-bottom; @height; @bg-url) {
+.zigzag-top(@pos-bottom; @height; @width; @bg-url) {
   &::after {
-    display: block;
+    display: flex;
     content: "";
     position: absolute;
     bottom: @pos-bottom;
@@ -39,6 +39,8 @@
 
     background-image: @bg-url;
     background-repeat: repeat-x;
+    background-position: 0 top;
+    background-size: @width @height;
   }
 }
 
