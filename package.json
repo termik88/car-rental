@@ -55,6 +55,7 @@
   },
   "dependencies": {
     "del": "^3.0.0",
+    "gulp-htmlmin": "^3.0.0",
     "posthtml-include": "^1.1.0"
   }
 }
