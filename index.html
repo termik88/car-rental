@@ -83,14 +83,14 @@
           <h1 class="promo__title">Аренда автомобиля<br>представительского класса<br>с водителем</h1>
           <ul class="promo__list categories-list">
             <li class="categories-list__item categories-list__item--interier">
-              <a class="categories-list__link" href="#">Минивены
+              <a class="categories-list__link" href="#minivan">Минивены
                 <svg class="categories-list__link-icon categories-list__link-icon--interior" width="80" height="36">
                   <use xlink:href="#icon-minivan"/>
                 </svg>
               </a>
             </li>
             <li class="categories-list__item categories-list__item--toys">
-              <a class="categories-list__link" href="#">Автобусы
+              <a class="categories-list__link" href="#bus">Автобусы
                 <svg class="categories-list__link-icon categories-list__link-icon--toy" width="80" height="36">
                   <use xlink:href="#icon-bus"/>
                 </svg>
@@ -100,39 +100,75 @@
         </div>
       </section>
 
-      <article class="hit">
-        <div class="hit__container">
-          <h2 class="hit__name">Mercedes-Benz Viano</h2>
-          <p class="hit__title">Минивены</p>
-          <p class="hit__description">Охуительный тазик, Да, Женя ?)))</p>
-          <table class="hit__consist table-consist">
-            <tr class="table-consist__col">
-              <td class="table-consist__row">Цвет:</td>
-              <td class="table-consist__row">Черный</td>
-            </tr>
-            <tr class="table-consist__col">
-              <td class="table-consist__row">Посадочных мест:</td>
-              <td class="table-consist__row">6</td>
-            </tr>
-            <tr class="table-consist__col">
-              <td class="table-consist__row">Высота:</td>
-              <td class="table-consist__row">15 см</td>
-            </tr>
-          </table>
-          <picture class="hit__picture">
-            <!--
-            <source type="image/webp" srcset="img/viano-front-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x" media="(min-width: 1150px)">
-            <source type="image/webp" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x" media="(min-width: 768px)">
-            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
-            -->
+      <section id="minivan" class="cars">
+        <section class="cars__category cars__category--minivan">
+          <article class="car">
+            <h2 class="car__name">Mercedes-Benz Viano</h2>
+            <p class="car__title">Минивен</p>
+            <p class="car__description">Охуительный тазик, Да, Женя ?)))</p>
+            <table class="car__consist table-consist">
+              <tr class="table-consist__col">
+                <td class="table-consist__row">Цвет:</td>
+                <td class="table-consist__row">Черный</td>
+              </tr>
+              <tr class="table-consist__col">
+                <td class="table-consist__row">Посадочных мест:</td>
+                <td class="table-consist__row">6</td>
+              </tr>
+              <tr class="table-consist__col">
+                <td class="table-consist__row">Высота:</td>
+                <td class="table-consist__row">15 см</td>
+              </tr>
+            </table>
+            <picture class="car__picture">
+              <!--
+              <source type="image/webp" srcset="img/viano-front-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x" media="(min-width: 1150px)">
+              <source type="image/webp" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x" media="(min-width: 768px)">
+              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+              -->
 
-            <source srcset="img/viano-front-desktop@1x.jpg 1x, img/viano-front-desktop@2x.jpg 2x" media="(min-width: 1150px)">
-            <source srcset="img/viano-front-tablet@1x.jpg 1x, img/viano-front-tablet@2x.jpg 2x" media="(min-width: 768px)">
-            <img class="hit__foto" src="img/viano-front-mobile@1x.jpg" srcset="img/viano-front-mobile@2x.jpg 2x" alt="Viano">
-          </picture>
-          <p class="hit__price">Цена: 990 руб.</p>
-        </div>
-      </article>
+              <source srcset="img/viano/viano-front-desktop@1x.jpg 1x, img/viano/viano-front-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+              <source srcset="img/viano/viano-front-tablet@1x.jpg 1x, img/viano/viano-front-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <img class="car__foto" src="img/viano/viano-front-mobile@1x.jpg" srcset="img/viano/viano-front-mobile@2x.jpg 2x" alt="Viano">
+            </picture>
+            <p class="car__price">Цена проката: 1990 руб.</p>
+          </article>
+        </section>
+
+        <section id="bus" class="cars__category cars__category--bus">
+          <article class="car">
+            <h2 class="car__name">Mercedes-Benz Sprinter</h2>
+            <p class="car__title">Автобус</p>
+            <p class="car__description">Охуительный тазик, Да, Женя ?)))</p>
+            <table class="car__consist table-consist">
+              <tr class="table-consist__col">
+                <td class="table-consist__row">Цвет:</td>
+                <td class="table-consist__row">Белый</td>
+              </tr>
+              <tr class="table-consist__col">
+                <td class="table-consist__row">Посадочных мест:</td>
+                <td class="table-consist__row">12</td>
+              </tr>
+              <tr class="table-consist__col">
+                <td class="table-consist__row">Высота:</td>
+                <td class="table-consist__row">15 см</td>
+              </tr>
+            </table>
+            <picture class="car__picture">
+              <!--
+              <source type="image/webp" srcset="img/viano-front-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x" media="(min-width: 1150px)">
+              <source type="image/webp" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x" media="(min-width: 768px)">
+              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+              -->
+
+              <source srcset="img/sprinter/sprinter-front-desktop@1x.jpg 1x, img/sprinter/sprinter-front-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+              <source srcset="img/sprinter/sprinter-front-tablet@1x.jpg 1x, img/sprinter/sprinter-front-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <img class="car__foto" src="img/sprinter/sprinter-front-mobile@1x.jpg" srcset="img/sprinter/sprinter-front-mobile@2x.jpg 2x" alt="Viano">
+            </picture>
+            <p class="car__price">Цена проката: 1990 руб.</p>
+          </article>
+        </section>
+      </section>
 
       <section class="about">
         <div class="about__container">
