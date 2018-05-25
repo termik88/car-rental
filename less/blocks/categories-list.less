@@ -16,11 +16,11 @@
   position: relative;
   width: 100%;
 
-  &--interier {
+  &--minivan {
     background-color: #000000;
   }
 
-  &--toys {
+  &--bus {
     background-color: #000000;
   }
 }
@@ -38,12 +38,12 @@
 
   fill: @bg-dark-green;
 
-  &--interior {
+  &--minivan {
     top: 23px;
-    right: 37px;
+    right: 26px;
   }
 
-  &--toy {
+  &--bus {
     top: 21px;
     right: 28px;
   }
@@ -84,18 +84,38 @@
     line-height: 30px;
   }
 
+  .categories-list__item {
+    &--minivan {
+      box-shadow: inset -2px 0 0 0 @bg-dark-green;
+
+      &:hover,
+      &:focus {
+        box-shadow: inset -2px 0 0 0 @white;
+      }
+    }
+
+    &--bus {
+      box-shadow: inset 2px 0 0 0 @bg-dark-green;
+
+      &:hover,
+      &:focus {
+        box-shadow: inset 2px 0 0 0 @white;
+      }
+    }
+  }
+
   .categories-list__link {
     padding-left: 35px;
     padding-bottom: 32px;
   }
 
   .categories-list__link-icon {
-    &--interior {
+    &--minivan {
       top: 28px;
       right: 37px;
     }
 
-    &--toy {
+    &--bus {
       top: 30px;
       right: 34px;
     }
