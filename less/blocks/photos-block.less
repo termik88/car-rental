@@ -1,0 +1,47 @@
+/*car__photos-block photos-block*/
+.photos-block {
+  margin-bottom: 24px;
+
+  &__photo-main {
+    width: 260px;
+
+    background-color: @bg-grey;
+  }
+
+  &__link {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__image {
+    width: 83px;
+    height: 83px;
+
+    background-color: @bc-grey;
+  }
+
+  &__image:focus,
+  &__image:hover {
+    box-shadow: 2px 2px 0 0 @bg-dark-green;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photos-block {
+    position: absolute;
+    top: 151px;
+    left: 384px;
+    width: 333px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos-block {
+    top: 172px;
+    left: 575px;
+    margin-bottom: 24px;
+    width: 525px;
+
+    z-index: -1;
+  }
+}
