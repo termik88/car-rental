@@ -67,13 +67,14 @@
 
   .car {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 768px;
-    padding: 45px 100px 50px 50px;
+    padding: 45px 50px 50px 50px;
   }
 
   .car__name {
-    width: 520px;
+    width: 530px;
     margin-bottom: 50px;
 
     font-size: 43px;
@@ -100,15 +101,12 @@
   }
 
   .car__price {
+    position: absolute;
+    bottom: 95px;
     width: 290px;
-    margin-bottom: 35px;
 
     font-size: 20px;
     line-height: 24px;
-  }
-
-  .car__button {
-    width: 290px;
   }
 }
 
@@ -128,7 +126,7 @@
   }
 
   .car__name {
-    width: auto;
+    width: 1150px;
     margin-bottom: 48px;
 
     font-size: 53px;
@@ -137,5 +135,9 @@
 
   .car__description {
     margin-bottom: 47px;
+  }
+
+  .car__price {
+    bottom: 150px;
   }
 }
