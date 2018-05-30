@@ -2,7 +2,7 @@ var map;
 function initMap() {
   map = new google.maps.Map(document.getElementsByClassName('map')[0], {
     zoom: 16,
-    center: new google.maps.LatLng(59.938659, 30.323078),
+    center: new google.maps.LatLng(56.838250, 60.603472),
     mapTypeId: 'roadmap'
   });
 
@@ -15,7 +15,7 @@ function initMap() {
 
   var features = [
     {
-      position: new google.maps.LatLng(59.93866, 30.3229),
+      position: new google.maps.LatLng(56.838250, 60.603472),
       type: 'mishka'
     }
   ];
