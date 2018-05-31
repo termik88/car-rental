@@ -1,0 +1,51 @@
+/*map-block - block*/
+.map-block {
+  position: relative;
+}
+
+.map-block__container {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding: 18px 30px 27px 30px;
+}
+
+.map-block__title {
+  margin-bottom: 26px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .map-block__container {
+    width: 768px;
+  }
+
+  .map-block__title {
+    margin: 0;
+    margin-bottom: 48px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map-block {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 1150px;
+    margin: 0 auto;
+    padding: 69px 50px 0 225px;
+  }
+
+  .map-block__title {
+    margin-bottom: 52px;
+
+    font-size: 53px;
+  }
+}
